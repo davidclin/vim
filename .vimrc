@@ -11,6 +11,24 @@ set nocompatible
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
 
+
+" Highlight those annoying whitespaces
+" Source: http://vim.wikia.com/wiki/Highlight_unwanted_spaces 
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
+" Fold lines that start with /* and end of */
+"    zM  => fold all
+"    zR  => unfold all
+"    za  => toggle fold
+set foldmethod=marker
+set foldmarker=/*,*/
+
+
 " Enable syntax and plugins (for newtrw)
 syntax enable
 filetype plugin on
@@ -74,6 +92,13 @@ endif
 "set autowrite		" Automatically save before commands like :next and :make
 "set hidden		" Hide buffers when they are abandoned
 "set mouse=a		" Enable mouse usage (all modes)
+
+
+" Map ctrl-backspace in normal mode to delete all spaces and tabs at the end
+" of lines
+nmap <silent> <c-bs> :%s/\s\+$//<cr>
+
+
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
