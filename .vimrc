@@ -1,9 +1,22 @@
 " Enter the current millenium
 set nocompatible
 
+
+" Enable hybrid line numbers
+"set relativenumber
+"set number
+
+" Use linenumber in Insert mode
+" Use Relativenumber in CMD mode
+autocmd InsertEnter * :set number
+autocmd InsertLeave * :set relativenumber
+
 " Enable syntax and plugins (for newtrw)
 syntax enable
 filetype plugin on
+
+" Enable highlight search
+set hlsearch
 
 " Search down into subfolders
 " Provies tab-completion for all file-related tasks
