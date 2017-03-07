@@ -1,6 +1,12 @@
 # vim
 
-This repo contains personal vim settings I have found useful in my day-to-day activities.
+   _   _   _  
+  / \ / \ / \ 
+ ( V | I | M )
+  \_/ \_/ \_/ 
+
+
+This repo contains personal VIM settings I have found useful at work.
 
 Summary
 - Relative numbering
