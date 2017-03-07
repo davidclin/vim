@@ -1,6 +1,9 @@
 " Enter the current millenium
 set nocompatible
 
+" Set the font and height
+set guifont=Courier_New:h15
+
 " Set color gvim color scheme
 " To see list of available color schemes, open gvim and goto to 
 " Edit -> Color Scheme
