@@ -1,10 +1,11 @@
 # vim
 
+<pre>
    _   _   _  
   / \ / \ / \ 
  ( V | I | M )
   \_/ \_/ \_/ 
-
+</pre>
 
 This repo contains personal VIM settings I have found useful at work.
 
