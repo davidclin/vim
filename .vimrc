@@ -1,6 +1,11 @@
 " Enter the current millenium
 set nocompatible
 
+" Set color gvim color scheme
+" To see list of available color schemes, open gvim and goto to 
+" Edit -> Color Scheme
+color industry
+
 " Set autoindent
 " ctrl-d to un-indent
 set autoindent
