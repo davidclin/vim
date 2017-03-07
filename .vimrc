@@ -1,6 +1,10 @@
 " Enter the current millenium
 set nocompatible
 
+" Set autoindent
+" ctrl-d to un-indent
+set autoindent
+
 " Use linenumber in Insert mode
 " Use Relativenumber in CMD mode
 autocmd InsertEnter * :set number
