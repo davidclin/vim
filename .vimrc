@@ -5,8 +5,6 @@ set nocompatible
 imap jj <esc>
 imap kk <esc>
 
-
-
 " Keep Searched Text Centered
 nmap n nzz
 nmap N Nzz
@@ -17,7 +15,6 @@ nmap g# g#zz
 " Keep Cursor Centered Vertically
 nmap j jzz
 nmap k kzz
-
 
 " Set the font and height
 set guifont=Courier_New:h15
