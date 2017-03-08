@@ -1,6 +1,18 @@
 " Enter the current millenium
 set nocompatible
 
+" Keep Searched Text Centered
+nmap n nzz
+nmap N Nzz
+nmap # #zz
+nmap g* g*zz
+nmap g# g#zz
+
+" Keep Cursor Centered Vertically
+nmap j jzz
+nmap k kzz
+
+
 " Set the font and height
 set guifont=Courier_New:h15
 
