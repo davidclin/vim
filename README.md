@@ -15,4 +15,4 @@ Summary
 - Highlighting tabs or whitespace at end of line in RED
 - Setting gvim color scheme
 - Keep cursor centered vertically
-- Map 'jj' and 'kk' to \<esc\>
+- Mapping 'jj' and 'kk' to \<esc\>
