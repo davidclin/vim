@@ -1,6 +1,12 @@
 " Enter the current millenium
 set nocompatible
 
+" Map jj and kk to <esc>
+imap jj <esc>
+imap kk <esc>
+
+
+
 " Keep Searched Text Centered
 nmap n nzz
 nmap N Nzz
