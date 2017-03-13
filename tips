@@ -1,0 +1,23 @@
+Tips and Examples
+
+/* Abbreviations
+
+*/
+
+/* Substitution
+Examples:
+   :%s/match/newword/gi   replace entire file with newword ; case-insensitive
+   :%s/match/newword/gin  get cound of number of matches
+   :s/match/newword/gi    replace all matches with newword in present line 
+*/
+
+/* File Search
+
+*/
+
+/* Inserting Output from Shell
+
+Example 1 - :.!figlet hello    Insert output from figlet 
+Example 2 - :.!ls              Insert output from ls
+
+*/
