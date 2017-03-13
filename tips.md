@@ -10,7 +10,7 @@
 This document is best viewed in VIM using __:set foldingmethod=marker__ where folds are defined within __/* */__.
 
 Use following:
-- __za__   to fold
+- __za__   to fold single entry
 - __zm__   to fold all
 - __zr__   to unfold all
 
