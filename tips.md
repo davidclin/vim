@@ -14,6 +14,7 @@ Use following:
 - __zm__   to fold all
 - __zr__   to unfold all
 
+[YouTube: Code Folding (Marker Method)](https://www.youtube.com/watch?v=MtmFE7M-pEM)
 
 /* Help
 :help :<verb>
