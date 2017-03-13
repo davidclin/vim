@@ -7,7 +7,7 @@
   \_/ \_/ \_/ \_/ 
 </pre>
 
-This document is best viewed in VIM using __:set foldingmethod=marker'__ where folds are defined within __/* */__.
+This document is best viewed in VIM using __:set foldingmethod=marker__ where folds are defined within __/* */__.
 
 Use following:
 - __za__   to fold
