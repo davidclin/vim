@@ -7,7 +7,7 @@
   \_/ \_/ \_/ 
 </pre>
 
-This repo contains personal VIM settings I use everyday.
+This repo contains my personal VIM settings.
 
 Summary
 - Relative numbering
