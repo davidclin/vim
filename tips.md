@@ -7,6 +7,14 @@
   \_/ \_/ \_/ \_/ 
 </pre>
 
+This document is best viewed in VIM using __:set foldingmethod=marker'__ where folds are defined within __/* */__.
+
+Use following:
+- __za__   to fold
+- __zm__   to fold all
+- __zr__   to unfold all
+
+
 /* Help
 :help :<verb>
 :help :s       Get help on substitution
