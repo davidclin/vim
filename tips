@@ -7,57 +7,45 @@
   \_/ \_/ \_/ \_/ 
 </pre>
 
-/* Help
+Help
 :help :<verb>
 :help :s       Get help on substitution
 
-/*
-
-/* Abbreviations
+Abbreviations
 :ab hh hello   Replaces 'hh' with 'hello' after space when in INSERT mode
 :ab com ----   Delineator
 :ab            Lists all abbreviations 
 :una           Unabbreviate
-*/
 
-/* Mappings
+Mappings
 TBD
-*/
 
-/* Substitution
+Substitution
 :%s/match/newword/gi   Replaces entire file with newword ; case-insensitive
 :%s/match/newword/gin  Gets count of number of matches
 :s/match/newword/gi    Replaces all matches with newword in present line 
 inter-active substitution (TBD)
 substituting match with strings in another file (TBD)
-*/
 
-/* File Search
+File Search
 TBD
-*/
 
-/* Inserting Output from Shell 
+Inserting Output from Shell 
 :.!figlet hello    Inserts output from figlet into file 
 :.!date            Inserts output from date into file
-*/
 
-/* Regular Expressions
+Regular Expressions
 TBD
-*/
 
-/* Plug-ins
+Plug-ins
 TBD
-*/
 
-/* Dictionary and Spellchecking
+
+Dictionary and Spellchecking
 TBD
-*/
 
-/* Autocompletion
+Autocompletion
 TBD
-*/
 
-/* Macros
+Macros
 TBD
-*/
-
