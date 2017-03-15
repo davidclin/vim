@@ -1,6 +1,14 @@
 " Enter the current millenium
 set nocompatible
 
+" How to remap CapsLock to Ctrl 
+" Note: This is NOT a vim setting but comes in handy
+setxkbmap -option 'caps:ctrl_modifier'
+
+" Map jj and kk to <esc>
+imap jj <esc>
+imap kk <esc>
+
 " Easier split navigations
 " Instead of ctrl-w followed by motion key, it’s just ctrl-<motion key>
 " And in case you've forgotten how to split windows:
@@ -9,10 +17,6 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-
-" Map jj and kk to <esc>
-imap jj <esc>
-imap kk <esc>
 
 " Keep Searched Text Centered
 nmap n nzz
