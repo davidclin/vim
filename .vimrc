@@ -1,6 +1,15 @@
 " Enter the current millenium
 set nocompatible
 
+" Easier split navigations
+" Instead of ctrl-w followed by motion key, it’s just ctrl-<motion key>
+" And in case you've forgotten how to split windows:
+" :vsp , :sp
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " Map jj and kk to <esc>
 imap jj <esc>
 imap kk <esc>
