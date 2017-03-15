@@ -16,3 +16,4 @@ Summary
 - Setting gvim color scheme
 - Keep cursor centered vertically
 - Mapping 'jj' and 'kk' to \<esc\>
+- New mappings for navigating through split screens
