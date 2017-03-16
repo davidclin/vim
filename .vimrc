@@ -3,7 +3,7 @@ set nocompatible
 
 " How to remap CapsLock to Ctrl 
 " Note: This is NOT a vim setting but comes in handy
-setxkbmap -option 'caps:ctrl_modifier'
+"setxkbmap -option 'caps:ctrl_modifier'
 
 " Map jj and kk to <esc>
 imap jj <esc>
