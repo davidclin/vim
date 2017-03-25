@@ -21,6 +21,10 @@ Useful Commands:
 :help :s       Get help on substitution
 */
 
+/* Linux: Remap CapsLock to Ctrl Key
+setxkbmap -option 'caps:ctrl_modifier'
+*/
+
 /* Abbreviations
 :ab hh hello   Replaces 'hh' with 'hello' after space when in INSERT mode
 :ab com ----   Delineator
