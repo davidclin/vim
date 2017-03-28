@@ -1,6 +1,9 @@
 " Enter the current millenium
 set nocompatible
 
+
+set cc=+1,+2,+3
+
 " How to remap CapsLock to Ctrl 
 " Note: This is NOT a vim setting but comes in handy
 "setxkbmap -option 'caps:ctrl_modifier'
@@ -35,7 +38,7 @@ set guifont=Courier_New:h15
 " Set color gvim color scheme
 " To see list of available color schemes, open gvim and goto to 
 " Edit -> Color Scheme
-color industry
+color darkblue 
 
 " Set autoindent
 " ctrl-d to un-indent
