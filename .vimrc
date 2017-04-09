@@ -160,17 +160,24 @@ set hidden		" Hide buffers when they are abandoned
 "  \_/ \_/ \_/ \_/ \_/ \_/ \_/ \_/
 "
 
-"| Description            | Command           |
-"|------------------------+-------------------|
-"| Open web page from vim | gx                |
-"|------------------------+-------------------|
-"| Table Mode             | <leader>tm        |
-"|------------------------+-------------------|
-"| Easy Motion            | <leader><leader>w |
-"|                        | <leader><leader>b |
-"|------------------------+-------------------|
-"| Execute shell cmd      | :!<command>       |
-"|------------------------+-------------------|
-"| List buffers           | :ls               |
-"| Open buffer            | :b<#>             |
-"|------------------------+-------------------|
+"| Description            | Command                 |
+"|------------------------+-------------------------|
+"| Open web page from vim | gx                      |
+"|------------------------+-------------------------|
+"| Table Mode             | <leader>tm              |
+"|------------------------+-------------------------|
+"| Easy Motion            | <leader><leader>w       |
+"|                        | <leader><leader>b       |
+"|------------------------+-------------------------|
+"| Execute shell cmd      | :!<command>             |
+"|------------------------+-------------------------|
+"| List buffers           | :ls                     |
+"| Open buffer            | :b<#>                   |
+"|------------------------+-------------------------|
+"| Sustitution            | :s/match/new_string/gci |
+"|                        | g global                |
+"|                        | c confirm               |
+"|                        | i case insensitive      |
+"|                        | I case sensitive        |
+"|------------------------+-------------------------|
+"
