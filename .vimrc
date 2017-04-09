@@ -55,7 +55,8 @@ filetype plugin indent on    " required
 set laststatus=2
 
 " Set Airline Theme
-:let g:airline_theme='dark'
+" https://github.com/vim-airline/vim-airline/wiki/Screenshots
+let g:airline_theme='simple'
 
 " Enable vim-color-pencil when starting Goyo
 function! s:goyo_enter()
@@ -63,7 +64,7 @@ function! s:goyo_enter()
 endfunction
 
 function! s:goyo_leave()
-	:let g:airline_theme='dark'
+	:let g:airline_theme='simple'
 endfunction
 
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
