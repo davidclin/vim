@@ -160,14 +160,14 @@ set hidden		" Hide buffers when they are abandoned
 "  \_/ \_/ \_/ \_/ \_/ \_/ \_/ \_/
 "
 
-| Description            | Command           |
-|------------------------+-------------------|
-| Open web page from vim | gx                |
-|------------------------+-------------------|
-| Table Mode             | <leader>tm        |
-|------------------------+-------------------|
-| Easy Motion            | <leader><leader>w |
-|                        | <leader><leader>b |
-|------------------------+-------------------|
-| Execute shell cmd      | :!<command>       |
-|------------------------+-------------------|
+"| Description            | Command           |
+"|------------------------+-------------------|
+"| Open web page from vim | gx                |
+"|------------------------+-------------------|
+"| Table Mode             | <leader>tm        |
+"|------------------------+-------------------|
+"| Easy Motion            | <leader><leader>w |
+"|                        | <leader><leader>b |
+"|------------------------+-------------------|
+"| Execute shell cmd      | :!<command>       |
+"|------------------------+-------------------|
