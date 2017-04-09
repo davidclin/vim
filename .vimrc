@@ -171,3 +171,6 @@ set hidden		" Hide buffers when they are abandoned
 "|------------------------+-------------------|
 "| Execute shell cmd      | :!<command>       |
 "|------------------------+-------------------|
+"| List buffers           | :ls               |
+"| Open buffer            | :b<#>             |
+"|------------------------+-------------------|
