@@ -192,5 +192,9 @@ set hidden		" Hide buffers when they are abandoned
 "|                        | visually select (v)     |
 "|                        | yank (y)                |
 "|------------------------+-------------------------|
+"| Search for string      | /   search forward      |
+"|                        | ?   search backward     |
+"|------------------------+-------------------------|
+
 
 
