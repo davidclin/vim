@@ -20,7 +20,12 @@ Summary
 - Remapping CapsLock to Ctrl
 
 Plugins
-- easymotion/vim-easymotion
-- vim-airline/vim-airline
-- vim-airline/vim-airline-themes
-- 
+- Plugin 'tpope/vim-fugitive'
+- Plugin 'easymotion/vim-easymotion'
+- Plugin 'vim-airline/vim-airline'
+- Plugin 'vim-airline/vim-airline-themes'
+- Plugin 'kien/ctrlp.vim'
+- Plugin 'junegunn/goyo.vim'
+- Plugin 'tomtom/tcomment_vim'
+- Plugin 'dhruvasagar/vim-table-mode'
+- Plugin 'reedes/vim-colors-pencil'
