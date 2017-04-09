@@ -180,4 +180,17 @@ set hidden		" Hide buffers when they are abandoned
 "|                        | i case insensitive      |
 "|                        | I case sensitive        |
 "|------------------------+-------------------------|
-"
+"| Change inner word      | ciw                     |
+"| Change inner quotes    | ci"                     |
+"| Change inner paragraph | cip                     |
+"| Change inner tag       | cit                     |
+"| Change as sentence     | cas                     |
+"|                        |                         |
+"|                        | Other verbs:            |
+"|                        | delete (d)              |
+"|                        | indent (>)              |
+"|                        | visually select (v)     |
+"|                        | yank (y)                |
+"|------------------------+-------------------------|
+
+
