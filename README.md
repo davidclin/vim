@@ -7,7 +7,7 @@
   \_/ \_/ \_/ 
 </pre>
 
-This repo contains my personal VIM settings.
+This repo contains useful VIM settings and Plugins.
 
 Summary
 - Relative numbering
@@ -18,3 +18,9 @@ Summary
 - Mapping 'jj' and 'kk' to \<esc\>
 - New mappings for navigating through split screens
 - Remapping CapsLock to Ctrl
+
+Plugins
+- easymotion/vim-easymotion
+- vim-airline/vim-airline
+- vim-airline/vim-airline-themes
+- 
