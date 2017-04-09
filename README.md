@@ -7,7 +7,7 @@
   \_/ \_/ \_/ 
 </pre>
 
-This repo contains useful VIM settings and Plugins.
+This repo contains useful VIM settings and Plugins I use in my .vimrc file.
 
 Summary
 - Relative numbering
@@ -20,6 +20,7 @@ Summary
 - Remapping CapsLock to Ctrl
 
 Plugins
+- Plugin 'VundleVim/Vundle.vim'
 - Plugin 'tpope/vim-fugitive'
 - Plugin 'easymotion/vim-easymotion'
 - Plugin 'vim-airline/vim-airline'
