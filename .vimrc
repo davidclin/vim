@@ -63,7 +63,7 @@ function! s:goyo_enter()
 endfunction
 
 function! s:goyo_leave()
-	let g:airline_theme='pencil'
+	:let g:airline_theme='dark'
 endfunction
 
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
@@ -152,3 +152,22 @@ set hidden		" Hide buffers when they are abandoned
 " Add the following line to Ubuntu "Startup Applications" to remap CapsLock to Control Key
 " setxkbmap -option 'caps:ctrl_modifier'
 
+
+
+"   _   _   _   _   _   _   _   _
+"  / \ / \ / \ / \ / \ / \ / \ / \
+" ( c | o | m | m | a | n | d | s )
+"  \_/ \_/ \_/ \_/ \_/ \_/ \_/ \_/
+"
+
+| Description            | Command           |
+|------------------------+-------------------|
+| Open web page from vim | gx                |
+|------------------------+-------------------|
+| Table Mode             | <leader>tm        |
+|------------------------+-------------------|
+| Easy Motion            | <leader><leader>w |
+|                        | <leader><leader>b |
+|------------------------+-------------------|
+| Execute shell cmd      | :!<command>       |
+|------------------------+-------------------|
