@@ -22,17 +22,11 @@ Plugin 'VundleVim/Vundle.vim'
 "
 
 Plugin 'tpope/vim-fugitive'
-
 Plugin 'easymotion/vim-easymotion'
-
 Plugin 'vim-airline/vim-airline'
-
 Plugin 'vim-airline/vim-airline-themes'
-
 Plugin 'kien/ctrlp.vim'
-
 Plugin 'junegunn/goyo.vim'
-
 Plugin 'tomtom/tcomment_vim'
 
 
