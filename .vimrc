@@ -12,8 +12,6 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
 
 "    _   _   _   _   _   _   _
 "   / \ / \ / \ / \ / \ / \ / \
@@ -21,6 +19,7 @@ Plugin 'VundleVim/Vundle.vim'
 "   \_/ \_/ \_/ \_/ \_/ \_/ \_/
 "
 
+Plugin 'VundleVim/Vundle.vim'     " let Vundle manage Vundle, required
 Plugin 'tpope/vim-fugitive'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'vim-airline/vim-airline'
@@ -62,6 +61,13 @@ set laststatus=2
 function! s:goyo_enter()
 	colorscheme pencil
 endfunction
+
+function! s:goyo_leave()
+	let g:airline_theme='pencil'
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 " Map jj and kk to <esc>
 imap jj <esc>
@@ -127,5 +133,17 @@ set ignorecase		" Do case insensitive matching
 set smartcase		" Do smart case matching
 set incsearch		" Incremental search
 set hidden		" Hide buffers when they are abandoned
-set mouse=a		" Enable mouse usage (all modes)
+"set mouse=a		" Enable mouse usage (all modes)
+                        " Note: If you enable mouse usage, right-clicking
+			" will activate visual mode preventing you from
+			" pasting to file.
+
+"   _   _   _   _   _
+"  / \ / \ / \ / \ / \
+" ( l | i | n | u | x )
+"  \_/ \_/ \_/ \_/ \_/
+"
+
+" Add the following line to Ubuntu "Startup Applications" to remap CapsLock to Control Key
+" setxkbmap -option 'caps:ctrl_modifier'
 
