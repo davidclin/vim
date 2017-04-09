@@ -29,6 +29,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'dhruvasagar/vim-table-mode'
+Plugin 'reedes/vim-colors-pencil'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -56,6 +57,11 @@ set laststatus=2
 
 " Set Airline Theme
 :let g:airline_theme='dark'
+
+" Enable vim-color-pencil when starting Goyo
+function! s:goyo_enter()
+	colorscheme pencil
+endfunction
 
 " Map jj and kk to <esc>
 imap jj <esc>
