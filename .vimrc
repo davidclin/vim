@@ -159,7 +159,7 @@ set hidden		" Hide buffers when they are abandoned
 " ( c | o | m | m | a | n | d | s )
 "  \_/ \_/ \_/ \_/ \_/ \_/ \_/ \_/
 "
-
+"|------------------------+-------------------------|
 "| Description            | Command                 |
 "|------------------------+-------------------------|
 "| Open web page from vim | gx                      |
