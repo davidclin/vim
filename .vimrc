@@ -58,6 +58,9 @@ set laststatus=2
 " https://github.com/vim-airline/vim-airline/wiki/Screenshots
 let g:airline_theme='simple'
 
+" Automatically displays all buffers when there's only one tab open.
+let g:airline#extensions#tabline#enabled = 1
+
 " Enable vim-color-pencil when starting Goyo
 function! s:goyo_enter()
 	colorscheme pencil
@@ -106,10 +109,14 @@ set guifont=Courier_New:h15
 " ctrl-d to un-indent
 set autoindent
 
+" Set line number by default
+set relativenumber
+
 " Use linenumber in Insert mode
 " Use Relativenumber in CMD mode
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
+
 
 " Highlight those annoying whitespaces
 " Source: http://vim.wikia.com/wiki/Highlight_unwanted_spaces
