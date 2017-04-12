@@ -1,9 +1,8 @@
-"    David Lin's .vimrc File
-"
-"    _   _   _   _   _   _
-"   / \ / \ / \ / \ / \ / \
-"  ( v | u | n | d | l | e )
-"   \_/ \_/ \_/ \_/ \_/ \_/
+"  David Lin's .vimrc File
+
+"|--------|
+"| Vundle |
+"|--------|
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -12,12 +11,9 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-
-"    _   _   _   _   _   _   _
-"   / \ / \ / \ / \ / \ / \ / \
-"  ( p | l | u | g | i | n | s )
-"   \_/ \_/ \_/ \_/ \_/ \_/ \_/
-"
+"|---------|
+"| Plugins |
+"|---------|
 
 Plugin 'VundleVim/Vundle.vim'     " let Vundle manage Vundle, required
 Plugin 'tpope/vim-fugitive'
@@ -45,12 +41,11 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-"    _   _   _   _   _   _
-"   / \ / \ / \ / \ / \ / \
-"  ( . | v | i | m | r | c )
-"   \_/ \_/ \_/ \_/ \_/ \_/
-"
-"
+
+"|-----------------|
+"| .vimrc Settings |
+"|-----------------|
+
 " Activate Airline Theme Bar
 set laststatus=2
 
@@ -163,22 +158,19 @@ set hidden		" Hide buffers when they are abandoned
 			" will activate visual mode preventing you from
 			" pasting to file.
 
-"   _   _   _   _   _
-"  / \ / \ / \ / \ / \
-" ( l | i | n | u | x )
-"  \_/ \_/ \_/ \_/ \_/
-"
+"|----------------|
+"| Linux Commands |
+"|----------------|
+
 
 " Add the following line to Ubuntu "Startup Applications" to remap CapsLock to Control Key
 " setxkbmap -option 'caps:ctrl_modifier'
 
+"|--------------|
+"| VIM Commands |
+"|--------------|
 
 
-"   _   _   _   _   _   _   _   _
-"  / \ / \ / \ / \ / \ / \ / \ / \
-" ( c | o | m | m | a | n | d | s )
-"  \_/ \_/ \_/ \_/ \_/ \_/ \_/ \_/
-"
 "|------------------------+-------------------------|
 "| Description            | Command                 |
 "|------------------------+-------------------------|
@@ -215,6 +207,3 @@ set hidden		" Hide buffers when they are abandoned
 "| Search for string      | /   search forward      |
 "|                        | ?   search backward     |
 "|------------------------+-------------------------|
-
-
-
