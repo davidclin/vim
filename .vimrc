@@ -61,6 +61,9 @@ let g:airline_theme='simple'
 " Automatically displays all buffers when there's only one tab open.
 let g:airline#extensions#tabline#enabled = 1
 
+" Show word count
+let g:airline#extensions#wordcount#enabled = 1
+
 " Enable vim-color-pencil when starting Goyo
 function! s:goyo_enter()
 	colorscheme pencil
