@@ -80,9 +80,10 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 
 
-" Map jj and kk to <esc>
+" Map jk, jj, and kk to <esc>
 imap jj <esc>
 imap kk <esc>
+imap jk <esc> 
 
 " Easier split navigations
 " Instead of ctrl+w followed by motion key, it's just ctrl-<motion key>
