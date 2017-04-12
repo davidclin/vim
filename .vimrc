@@ -64,6 +64,10 @@ let g:airline#extensions#tabline#enabled = 1
 " Show word count
 let g:airline#extensions#wordcount#enabled = 1
 
+" Set large history and undo buffer
+set history=1000
+set undolevels=1000
+
 " Enable vim-color-pencil when starting Goyo
 function! s:goyo_enter()
 	colorscheme pencil
@@ -93,6 +97,11 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+
+" Normal Non-recursive Map (nnoremap) to expand vertical split window full screen
+nnoremap <leader>= <C-W><|>
+
 
 " Keep Searched Text Centered
 nmap n nzz
