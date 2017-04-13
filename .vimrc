@@ -46,6 +46,11 @@ filetype plugin indent on    " required
 "| .vimrc Settings |
 "|-----------------|
 
+
+" Go to next and previous buffer
+nnoremap ;; :bn<CR>
+nnoremap aa :bp<CR>
+
 " Activate Airline Theme Bar
 set laststatus=2
 
