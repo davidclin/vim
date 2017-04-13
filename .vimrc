@@ -83,7 +83,7 @@ nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 " Map jk, jj, and kk to <esc>
 imap jj <esc>
 imap kk <esc>
-imap jk <esc> 
+imap jk <esc>
 
 " Easier split navigations
 " Instead of ctrl+w followed by motion key, it's just ctrl-<motion key>
@@ -96,8 +96,11 @@ nnoremap <C-H> <C-W><C-H>
 
 
 " Normal Non-recursive Map (nnoremap) to expand vertical split window full screen
-nnoremap <leader>= <C-W><|>
+nnoremap <F2> <C-w>=
+nnoremap <F3> <C-w><bar>
 
+" Normal Non-recursive Map (nnoremap) to expand present windows horizontally
+nnoremap <F4> <C-w>_
 
 " Keep Searched Text Centered
 nmap n nzz
