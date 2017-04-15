@@ -216,3 +216,22 @@ set hidden		" Hide buffers when they are abandoned
 "| Search for string      | /   search forward      |
 "|                        | ?   search backward     |
 "|------------------------+-------------------------|
+
+"|-----------------|
+"| Custom Mappings |
+"|-----------------|
+
+"|----------------------------------------+---------|
+"| Description                            | Command |
+"|----------------------------------------+---------|
+"| Next buffer                            | ;;      |
+"| Previous Buffer                        | aa      |
+"| Equally sized split windows            | <F2>    |
+"| Expand present vert split window       | <F3>    |
+"| Expand present horizontal spit windows | <F4>    |
+"| Remove all trailing whitespaces        | <F5>    |
+"| Change split window                    | Ctrl-J  |
+"|                                        | Ctrl-K  |
+"|                                        | Ctrl-H  |
+"|                                        | Ctrl-L  |
+"
