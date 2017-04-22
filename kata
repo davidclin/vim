@@ -1,0 +1,79 @@
+Add a new sentence to front of this sentence.
+Add a new sentence to the end of this sentence.
+Copy this line and paste 3 times.
+Now take this paragraph and copy it multiple times.
+Cut any of the lines and paste it to the top of this page.
+Cut any of the lines and paste it to the bottom of this page.
+Replace the word "sentence" with "line". ***snickety***
+Replace "paste it" with "lick it".
+Remove every occurence of the word "Cut".
+Insert 3 spaces in front of the last 3 lines.
+Jump to the word snickety.
+Join this sentence with the sentence above it.
+Split this window vertically.
+Move to the right window.
+Open a new empty file.
+Take any section of the left window and paste to right window.
+Open green eggs and ham in a new buffer in any window.
+Quickly switch between buffers in the window that contains more than 1 buffers.
+Maximize the window in you're in with function key mapping you created.
+Make split windows of equal size.
+Close one of the window.
+Use CntlP to open a green eggs and ham file.
+Delete everything inside the quotes here... "you are a little dweeb"
+Delete everything around the paranthesis here... (please, don't eat me)
+Cut every word in this sentence To ;Nice job!
+Jump to end of this line and remove every word including end.
+Visually select 4 columns and insert the words "SUPER DUPER".
+Jump to line 11.
+Jump 3 lines down.
+Jump 5 lines up.
+Move cursor to end of sentence.
+Move cursor to beginning of sentence.
+List all Plugins.
+Update Plugins.
+Use help for a plugin you want to learn more about.
+Launch the following link in this line - aws.amazon.com
+Launch the following line in this line - http://aws.amazon.com
+Open NERDTree and navigate through the directory structure.
+Insert any text from figlet or cowsay into this document.
+Make a change to your .vimrc file and source the file.
+Split the window horizontally.
+Move to window below.
+Maximize the window.
+Make windows equal.
+Close the top window.
+Launch a ping to 8.8.8.8 with a count of 5
+Jump to any line and remove inside a word.
+Remove an entire line.
+Replace this line with new verbiage.
+How many words are used in this document?
+How many lines are in this document.
+Add several new lines with whitespaces at the end.
+Use <F5> to clean them up.
+Replace a letter with "x"
+Visually hightlight three lines and replace occurence of any word with a new word.
+make every word in this sentence caps
+make the first word in this sentence caps
+Activate the GoYo plugin
+Exit the GoYo plugin
+Fold the lines below
+#############################
+############################
+#############################
+#############################
+############################
+Add a table with the 3 columns and 3 rows.
+List buffers
+Activate Easymotion to jump to a word after cursor
+Activate Easymotion to jump to a word before cursor
+Substitute "jump" with "hop" in first line ONLY
+hey there, jump
+hey there, jump
+hey there, jump
+hey there, jump
+Substitute "jump" with "hop" in all lines above.
+
+
+
+
