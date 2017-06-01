@@ -161,6 +161,13 @@ set foldmarker=/*,*/
 syntax enable
 filetype plugin on
 
+" Color scheme
+" Useful for setting gVIM color scheme
+" To view entire list of color schemes, type :colorscheme <ctl+d>
+colorscheme evening
+
+
+
 " The following are commented out as they cause vim to behave a lot
 " " differently from regular Vi. They are highly recommended though.
 set showcmd		" Show (partial) command in status line.
