@@ -189,47 +189,54 @@ set hidden		" Hide buffers when they are abandoned
 " Add the following line to Ubuntu "Startup Applications" to remap CapsLock to Control Key
 " setxkbmap -option 'caps:ctrl_modifier'
 
-"|--------------|
-"| VIM Commands |
-"|--------------|
+"|---------------------|
+"| Useful VIM Commands |
+"|---------------------|
 
 
-"|------------------------+-------------------------|
-"| Description            | Command                 |
-"|------------------------+-------------------------|
-"| Open web page from vim | gx                      |
-"|------------------------+-------------------------|
-"| Table Mode             | <leader>tm              |
-"|------------------------+-------------------------|
-"| Easy Motion            | <leader><leader>w       |
-"|                        | <leader><leader>b       |
-"|------------------------+-------------------------|
-"| Execute shell cmd      | :!<command>             |
-"|------------------------+-------------------------|
-"| List buffers           | :ls                     |
-"| Open buffer            | :b<#>                   |
-"|------------------------+-------------------------|
-"| Sustitution            | :s/match/new_string/gci |
-"|                        | g global                |
-"|                        | c confirm               |
-"|                        | i case insensitive      |
-"|                        | I case sensitive        |
-"|------------------------+-------------------------|
-"| Change inner word      | ciw                     |
-"| Change inner quotes    | ci"                     |
-"| Change inner paragraph | cip                     |
-"| Change inner tag       | cit                     |
-"| Change as sentence     | cas                     |
-"|                        |                         |
-"|                        | Other verbs:            |
-"|                        | delete (d)              |
-"|                        | indent (>)              |
-"|                        | visually select (v)     |
-"|                        | yank (y)                |
-"|------------------------+-------------------------|
-"| Search for string      | /   search forward      |
-"|                        | ?   search backward     |
-"|------------------------+-------------------------|
+"|------------------------+-----------------------------------|
+"| Description            | Command                           |
+"|------------------------+-----------------------------------|
+"| Open web page from vim | gx                                |
+"|------------------------+-----------------------------------|
+"| Table Mode             | <leader>tm                        |
+"|                        | use single pipe to create cell(s) |
+"|                        | use double pipe to create line    |
+"|------------------------+-----------------------------------|
+"| Easy Motion            | <leader><leader>w                 |
+"|                        | <leader><leader>b                 |
+"|------------------------+-----------------------------------|
+"| Execute shell cmd      | :!<command>                       |
+"|------------------------+-----------------------------------|
+"| List buffers           | :ls                               |
+"| Open buffer            | :b<#>                             |
+"|------------------------+-----------------------------------|
+"| Sustitution            | :s/match/new_string/gci           |
+"|                        | g global                          |
+"|                        | c confirm                         |
+"|                        | i case insensitive                |
+"|                        | I case sensitive                  |
+"|------------------------+-----------------------------------|
+"| Change inner word      | ciw                               |
+"| Change inner quotes    | ci"                               |
+"| Change inner paragraph | cip                               |
+"| Change inner tag       | cit                               |
+"| Change as sentence     | cas                               |
+"|                        |                                   |
+"|                        | Other verbs:                      |
+"|                        | delete (d)                        |
+"|                        | indent (>)                        |
+"|                        | visually select (v)               |
+"|                        | yank (y)                          |
+"|------------------------+-----------------------------------|
+"| Search for string      | /   search forward                |
+"|                        | ?   search backward               |
+"|------------------------+-----------------------------------|
+"| Search for string in   | :find <string>                    |
+"| NerdTree               |                                   |
+"|------------------------+-----------------------------------|
+
+			
 
 "|-----------------|
 "| Custom Mappings |
@@ -249,4 +256,5 @@ set hidden		" Hide buffers when they are abandoned
 "|                                        | Ctrl-H  |
 "|                                        | Ctrl-L  |
 "| Start NERDTree                         | Ctrl-n  |
-"
+"| Close NERDTree                         | q       |
+"|----------------------------------------+---------|
