@@ -6,6 +6,11 @@
 
 " Install
 " git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" cd vim
+" cp .vimrm ~/.vimrc
+" vim
+" :PluginList
+" :PluginInstall
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
