@@ -13,10 +13,10 @@ Summary
 - Relative numbering
 - Folding based based on markers that start with /* and end with */
 - Highlighting tabs or whitespace at end of line in RED
-- Keep cursor centered vertically
+- Keeping cursor centered vertically
 - Mapping 'jj' and 'kk' to \<esc\>
 - New mappings for navigating through split screens
-- Remapping CapsLock to Ctrl
+- Remapping CapsLock to Ctrl (not really a capability of VIM)
 
 Plugins
 - Plugin 'VundleVim/Vundle.vim'
