@@ -262,4 +262,5 @@ set hidden		" Hide buffers when they are abandoned
 "|                                        | Ctrl-L  |
 "| Start NERDTree                         | Ctrl-n  |
 "| Close NERDTree                         | q       |
+"| NERDTree menu                          | m       |
 "|----------------------------------------+---------|
