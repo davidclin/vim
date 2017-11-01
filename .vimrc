@@ -199,48 +199,49 @@ set hidden		" Hide buffers when they are abandoned
 "|---------------------|
 
 
-"|------------------------+-----------------------------------|
-"| Description            | Command                           |
-"|------------------------+-----------------------------------|
-"| Open web page from vim | gx                                |
-"|------------------------+-----------------------------------|
-"| Table Mode             | <leader>tm                        |
-"|                        | use single pipe to create cell(s) |
-"|                        | use double pipe to create line    |
-"|------------------------+-----------------------------------|
-"| Easy Motion            | <leader><leader>w                 |
-"|                        | <leader><leader>b                 |
-"|------------------------+-----------------------------------|
-"| Execute shell cmd      | :!<command>                       |
-"|------------------------+-----------------------------------|
-"| List buffers           | :ls                               |
-"| Open buffer            | :b<#>                             |
-"|------------------------+-----------------------------------|
-"| Sustitution            | :s/match/new_string/gci           |
-"|                        | g global                          |
-"|                        | c confirm                         |
-"|                        | i case insensitive                |
-"|                        | I case sensitive                  |
-"|------------------------+-----------------------------------|
-"| Change inner word      | ciw                               |
-"| Change inner quotes    | ci"                               |
-"| Change inner paragraph | cip                               |
-"| Change inner tag       | cit                               |
-"| Change as sentence     | cas                               |
-"|                        |                                   |
-"|                        | Other verbs:                      |
-"|                        | delete (d)                        |
-"|                        | indent (>)                        |
-"|                        | visually select (v)               |
-"|                        | yank (y)                          |
-"|------------------------+-----------------------------------|
-"| Search for string      | /   search forward                |
-"|                        | ?   search backward               |
-"|------------------------+-----------------------------------|
-"| Search for string in   | :find <string>                    |
-"| NerdTree               |                                   |
-"|------------------------+-----------------------------------|
-
+" |------------------------+-----------------------------------|
+" | Description            | Command                           |
+" |------------------------+-----------------------------------|
+" | Open web page from vim | gx                                |
+" |------------------------+-----------------------------------|
+" | Table Mode             | <leader>tm                        |
+" |                        | use single pipe to create cell(s) |
+" |                        | use double pipe to create line    |
+" |------------------------+-----------------------------------|
+" | Easy Motion            | <leader><leader>w                 |
+" |                        | <leader><leader>b                 |
+" |------------------------+-----------------------------------|
+" | Execute shell cmd      | :!<command>                       |
+" |------------------------+-----------------------------------|
+" | List buffers           | :ls                               |
+" | Open buffer            | :b<#>                             |
+" |------------------------+-----------------------------------|
+" | Sustitution            | :s/match/new_string/gci           |
+" |                        | g global                          |
+" |                        | c confirm                         |
+" |                        | i case insensitive                |
+" |                        | I case sensitive                  |
+" |------------------------+-----------------------------------|
+" | Change inner word      | ciw                               |
+" | Change inner quotes    | ci"                               |
+" | Change inner paragraph | cip                               |
+" | Change inner tag       | cit                               |
+" | Change as sentence     | cas                               |
+" |                        |                                   |
+" |                        | Other verbs:                      |
+" |                        | delete (d)                        |
+" |                        | indent (>)                        |
+" |                        | visually select (v)               |
+" |                        | yank (y)                          |
+" |------------------------+-----------------------------------|
+" | Search for string      | /   search forward                |
+" |                        | ?   search backward               |
+" |------------------------+-----------------------------------|
+" | Search for string in   | :find <string>                    |
+" | NerdTree               |                                   |
+" |------------------------+-----------------------------------|
+" | Invert line order      | :g/^/m0                           |
+" |------------------------+-----------------------------------|
 			
 
 "|-----------------|
