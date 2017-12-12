@@ -35,6 +35,7 @@ Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'reedes/vim-colors-pencil'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
+" Plugin 'pearofducks/ansible-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -62,6 +63,9 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 " Go to next and previous buffer
 nnoremap ;; :bn<CR>
 nnoremap aa :bp<CR>
+
+" Paste code with formating preserved
+set paste
 
 " Activate Airline Theme Bar
 set laststatus=2
@@ -185,6 +189,8 @@ set hidden		" Hide buffers when they are abandoned
                         " Note: If you enable mouse usage, right-clicking
 			" will activate visual mode preventing you from
 			" pasting to file.
+
+set colorcolumn=72
 
 "|----------------|
 "| Linux Commands |

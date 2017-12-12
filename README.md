@@ -17,6 +17,7 @@ Summary
 - Mapping 'jj' and 'kk' to \<esc\>
 - New mappings for navigating through split screens
 - Remapping CapsLock to Ctrl (not really a capability of VIM)
+- Paste code with formatting preserved
 
 Plugins
 - Plugin 'VundleVim/Vundle.vim'
