@@ -15,6 +15,10 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+" set default directory path example
+" cd /home/user/my/work/dir (for Linux)
+" cd c:\Users\<username> (for Windows)
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
