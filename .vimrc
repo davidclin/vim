@@ -19,6 +19,11 @@ filetype off                  " required
 " cd /home/user/my/work/dir (for Linux)
 " cd c:\Users\<username> (for Windows)
 
+" for Windows
+" _vimrc is to windows what .vimrc is to unix
+" copy this file to: 
+" c:\ProgramFiles\vim\_vimrc
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
