@@ -28,6 +28,10 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" set the runtime path to include Vundle and initialize (for Windows)
+" set rtp+=$HOME/.vim/bundle/Vundle.vim/
+" call vundle#begin('$HOME/.vim/bundle/')
+
 "|---------|
 "| Plugins |
 "|---------|
