@@ -22,7 +22,7 @@ filetype off                  " required
 " for Windows
 " _vimrc is to windows what .vimrc is to unix
 " copy this file to: 
-" c:\Users\<username>\vim\_vimrc (this assumes you installed vim to this user directory; highly recommended) 
+" c:\Users\<username>\vim\_vimrc (this assumes you installed vim to this path ; recommended) 
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
