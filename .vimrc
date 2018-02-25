@@ -6,6 +6,7 @@
 
 " Install
 " git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" (for Windows) git clone https://github.com/VundleVim/Vundle.vim.git ./vimfiles/bundle/Vundle.vim (assumes Git is installed in c:\Users\<username> directory and this path is your $HOME)
 " cd vim
 " cp .vimrm ~/.vimrc
 " vim
