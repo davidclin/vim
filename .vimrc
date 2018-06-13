@@ -79,9 +79,9 @@ nnoremap ;; :bn<CR>
 nnoremap aa :bp<CR>
 
 " Paste code with formating preserved
-set paste
+" set paste  (:set nopaste to undo)
+" Note: When enabled, this will break your jj/kk/jk imap rules below
 
-" Activate Airline Theme Bar
 set laststatus=2
 
 " Set Airline Theme
