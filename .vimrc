@@ -1,6 +1,9 @@
 "  David Lin's .vimrc File
+"  https://github.com/davidclin/vim.git
 "
-"########## Vundle ##########
+" ############################
+" ########## Vundle ########## 
+" ############################
 "
 " Vundle is an easy to use and powerful VIM plugin manager.
 "
@@ -16,7 +19,7 @@
 "
 " Add Plugins 
 "
-"   See 'Plugins' section below
+"   Add your plugins under the 'Plugins' section further below
 "
 " Install Plugins
 "
@@ -26,33 +29,38 @@
 "   :PluginList
 "   :PluginInstall
 "   :PluginUpdate
+" 
+" Plugin Commands Summary
+"   :PluginList       - lists configured plugins
+"   :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+"   :PluginSearch foo - searches for foo; append `!` to refresh local cache
+"   :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" See :h vundle for more details or wiki for FAQ
 
+" #########################################
 " ########## Useful VIM Settings ##########
+" #########################################
+
 set nocompatible              
 filetype off                 
 
-" set default directory path example
-" cd /home/user/my/work/dir (for Linux)
-" cd c:\Users\<username> (for Windows)
+" ###################################################################
+" ########## Set the runtime path to include Vundle and initialize ##
+" ###################################################################
 
-" for Windows
-" _vimrc is to windows what .vimrc is to unix
-" copy this file to: 
-" c:\Users\<username>\vim\_vimrc (this assumes you installed vim to this path ; recommended) 
-
-" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-
-" set the runtime path to include Vundle and initialize (for Windows)
+"
+" (for Windows)
 " set rtp+=$HOME/.vim/bundle/Vundle.vim/
 " call vundle#begin('$HOME/.vim/bundle/')
 
-"|---------|
-"| Plugins |
-"|---------|
+" #############################
+" ########## Plugins ##########
+" #############################
 
-Plugin 'VundleVim/Vundle.vim'     " let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'   " let Vundle manage Vundle, required
 Plugin 'tpope/vim-fugitive'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'vim-airline/vim-airline'
@@ -66,36 +74,28 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 " Plugin 'pearofducks/ansible-vim'
 
-" All of your Plugins must be added before the following line
+" All of your Plugins must be added before these lines:
 call vundle#end()            " required
 filetype plugin indent on    " required
+
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
 
 
-"|-----------------|
-"| .vimrc Settings |
-"|-----------------|
+" ################################################################
+" ##########  Put your non-Plugin stuff after this line ##########
+" ################################################################
 
 " Set NERDTree mapping
 nnoremap <C-n> :NERDTreeToggle<CR>
 
-" Go to next and previous buffer
+" Go to next and previous buffer ; useful for switching tabs
 nnoremap ;; :bn<CR>
 nnoremap aa :bp<CR>
 
 " Paste code with formating preserved
 " set paste  (:set nopaste to undo)
-" Note: When enabled, this will break your jj/kk/jk imap rules below
+" Note: When enabled, this will break your jj/kk/jk imap rules to Esc 
 
 set laststatus=2
 
@@ -125,10 +125,8 @@ endfunction
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
-
 "Remove all trailing whitespace by pressing F5
 nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
-
 
 " Map jk, jj, and kk to <esc>
 imap jj <esc>
@@ -136,9 +134,10 @@ imap kk <esc>
 imap jk <esc>
 
 " Easier split navigations
-" Instead of ctrl+w followed by motion key, it's just ctrl-<motion key>
+" Instead of ctrl+w followed by motion key, use ctrl-<motion key>
 " And in case you've forgotten how to split windows:
-" :vsp , :sp
+" :vsp , vertical   split
+" :sp  , horizontal split
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
@@ -207,7 +206,7 @@ colorscheme evening
 
 
 " The following are commented out as they cause vim to behave a lot
-" " differently from regular Vi. They are highly recommended though.
+" differently from regular Vi. They are highly recommended though.
 set showcmd		" Show (partial) command in status line.
 set showmatch		" Show matching brackets.
 set ignorecase		" Do case insensitive matching
@@ -221,19 +220,20 @@ set hidden		" Hide buffers when they are abandoned
 
 set colorcolumn=72
 
-"|----------------|
-"| Linux Commands |
-"|----------------|
+" ###########################################
+" ########## Useful Linux Commands ##########
+" ###########################################
 
-
-" Add the following line to Ubuntu "Startup Applications" to remap CapsLock to Control Key
+" Add the following line to Ubuntu "Startup Applications" 
+" to remap CapsLock to Control Key:
+"
 " setxkbmap -option 'caps:ctrl_modifier'
 
-"|---------------------|
-"| Useful VIM Commands |
-"|---------------------|
 
-
+" #########################################
+" ########## Useful VIM Commands ##########
+" #########################################
+"
 " |------------------------+-----------------------------------|
 " | Description            | Command                           |
 " |------------------------+-----------------------------------|
@@ -301,7 +301,10 @@ set colorcolumn=72
 "| NERDTree menu                          | m       |
 "|----------------------------------------+---------|
 "
+" #################################
 " ########## Useful Tips ##########
+" #################################
+" 
 " This is where you can set the VIM default directory path:
 "   cd /home/user/my/work/dir (for Linux)
 "   cd c:\Users\<username> (for Windows)
