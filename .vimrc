@@ -300,3 +300,12 @@ set colorcolumn=72
 "| Close NERDTree                         | q       |
 "| NERDTree menu                          | m       |
 "|----------------------------------------+---------|
+"
+" ########## Useful Tips ##########
+" This is where you can set the VIM default directory path:
+"   cd /home/user/my/work/dir (for Linux)
+"   cd c:\Users\<username> (for Windows)
+
+" _vimrc is to windows what .vimrc is to unix
+" copy _vimrc to: 
+" c:\Users\<username>\vim\_vimrc (assuming you installed vim to this path ; recommended) 
