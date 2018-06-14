@@ -1,27 +1,29 @@
-"  David Lin's .vimrc File
-"  https://github.com/davidclin/vim.git
+" ##########################################################
+" ##########       David Lin's .vimrc File        #########
+" ########## https://github.com/davidclin/vim.git ##########
+" ##########################################################
 "
 " ############################
-" ########## Vundle ########## 
+" ########## Vundle ##########
 " ############################
 "
 " Vundle is an easy to use and powerful VIM plugin manager.
 "
-" Download
+" Step 1. Download
 "
 "   (for Linux)
 "   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 "
-"   (for Windows) 
-"   git clone https://github.com/VundleVim/Vundle.vim.git ./vimfiles/bundle/Vundle.vim 
-"   
+"   (for Windows)
+"   git clone https://github.com/VundleVim/Vundle.vim.git ./vimfiles/bundle/Vundle.vim
+"
 "   Assumes Git is installed in c:\Users\<username> directory and this path is your $HOME.
 "
-" Add Plugins 
+" Step 2. Add Plugins
 "
-"   Add your plugins under the 'Plugins' section further below
+"   Add your favorite plugins under the 'Plugins' section below
 "
-" Install Plugins
+" Step 3. Install Plugins
 "
 "   cd vim
 "   cp .vimrm ~/.vimrc
@@ -29,21 +31,115 @@
 "   :PluginList
 "   :PluginInstall
 "   :PluginUpdate
-" 
-" Plugin Commands Summary
-"   :PluginList       - lists configured plugins
-"   :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-"   :PluginSearch foo - searches for foo; append `!` to refresh local cache
-"   :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
-" See :h vundle for more details or wiki for FAQ
+"   Plugin Commands Summary
+"     :PluginList       - lists configured plugins
+"     :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+"     :PluginSearch foo - searches for foo; append `!` to refresh local cache
+"     :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+"   See :h vundle for more details or wiki for FAQ
+"
+"
+" #####################################
+" ########## Custom Mappings ##########
+" #####################################
+"
+"|----------------------------------------+---------|
+"| Description                            | Command |
+"|----------------------------------------+---------|
+"| Next buffer                            | ;;      |
+"| Previous Buffer                        | aa      |
+"| Equally sized split windows            | <F2>    |
+"| Expand present vert split window       | <F3>    |
+"| Expand present horizontal spit windows | <F4>    |
+"| Remove all trailing whitespaces        | <F5>    |
+"| Change split window                    | Ctrl-j  |
+"|                                        | Ctrl-k  |
+"|                                        | Ctrl-h  |
+"|                                        | Ctrl-l  |
+"| Start NERDTree                         | Ctrl-n  |
+"| Close NERDTree                         | q       |
+"| NERDTree menu                          | m       |
+"|----------------------------------------+---------|
+"
+"
+" #########################################
+" ########## Useful VIM Commands ##########
+" #########################################
+"
+" |------------------------+-----------------------------------|
+" | Description            | Command                           |
+" |------------------------+-----------------------------------|
+" | Open web page from vim | gx                                |
+" |------------------------+-----------------------------------|
+" | Table Mode             | <leader>tm                        |
+" |                        | use single pipe to create cell(s) |
+" |                        | use double pipe to create line    |
+" |------------------------+-----------------------------------|
+" | Easy Motion            | <leader><leader>w                 |
+" |                        | <leader><leader>b                 |
+" |------------------------+-----------------------------------|
+" | Execute shell cmd      | :!<command>                       |
+" |------------------------+-----------------------------------|
+" | List buffers           | :ls                               |
+" | Open buffer            | :b<#>                             |
+" |------------------------+-----------------------------------|
+" | Sustitution            | :s/match/new_string/[g|c|i]       |
+" |                        | g global                          |
+" |                        | c confirm                         |
+" |                        | i case insensitive                |
+" |                        | I case sensitive                  |
+" |------------------------+-----------------------------------|
+" | Change inner word      | ciw                               |
+" | Change inner quotes    | ci"                               |
+" | Change inner paragraph | cip                               |
+" | Change inner tag       | cit                               |
+" | Change as sentence     | cas                               |
+" |                        |                                   |
+" |                        | Other verbs:                      |
+" |                        | delete (d)                        |
+" |                        | indent (>)                        |
+" |                        | visually select (v)               |
+" |                        | yank (y)                          |
+" |------------------------+-----------------------------------|
+" | Search for string      | /   search forward                |
+" |                        | ?   search backward               |
+" |------------------------+-----------------------------------|
+" | Search for string in   | :find <string>                    |
+" | NerdTree               |                                   |
+" |------------------------+-----------------------------------|
+" | Invert line order      | :g/^/m0                           |
+" |------------------------+-----------------------------------|
+" 
+"
+" ###########################################
+" ########## Useful Linux Commands ##########
+" ###########################################
+"
+" Add the following line to Ubuntu "Startup Applications"
+" to remap CapsLock to Control Key:
+"
+" setxkbmap -option 'caps:ctrl_modifier'
+"
+"
+" #################################
+" ########## Useful Tips ##########
+" #################################
+"
+" This is where you can set the VIM default directory path:
+"   cd /home/user/my/work/dir (for Linux)
+"   cd c:\Users\<username> (for Windows)
 
+" _vimrc is to windows what .vimrc is to unix
+" copy _vimrc to:
+" c:\Users\<username>\vim\_vimrc (assuming you installed vim to this path ; recommended)
 " #########################################
 " ########## Useful VIM Settings ##########
 " #########################################
 
-set nocompatible              
-filetype off                 
+set nocompatible
+filetype off
 
 " ###################################################################
 " ########## Set the runtime path to include Vundle and initialize ##
@@ -95,7 +191,7 @@ nnoremap aa :bp<CR>
 
 " Paste code with formating preserved
 " set paste  (:set nopaste to undo)
-" Note: When enabled, this will break your jj/kk/jk imap rules to Esc 
+" Note: When enabled, this will break your jj/kk/jk imap rules to Esc
 
 set laststatus=2
 
@@ -220,95 +316,3 @@ set hidden		" Hide buffers when they are abandoned
 
 set colorcolumn=72
 
-" ###########################################
-" ########## Useful Linux Commands ##########
-" ###########################################
-
-" Add the following line to Ubuntu "Startup Applications" 
-" to remap CapsLock to Control Key:
-"
-" setxkbmap -option 'caps:ctrl_modifier'
-
-
-" #########################################
-" ########## Useful VIM Commands ##########
-" #########################################
-"
-" |------------------------+-----------------------------------|
-" | Description            | Command                           |
-" |------------------------+-----------------------------------|
-" | Open web page from vim | gx                                |
-" |------------------------+-----------------------------------|
-" | Table Mode             | <leader>tm                        |
-" |                        | use single pipe to create cell(s) |
-" |                        | use double pipe to create line    |
-" |------------------------+-----------------------------------|
-" | Easy Motion            | <leader><leader>w                 |
-" |                        | <leader><leader>b                 |
-" |------------------------+-----------------------------------|
-" | Execute shell cmd      | :!<command>                       |
-" |------------------------+-----------------------------------|
-" | List buffers           | :ls                               |
-" | Open buffer            | :b<#>                             |
-" |------------------------+-----------------------------------|
-" | Sustitution            | :s/match/new_string/gci           |
-" |                        | g global                          |
-" |                        | c confirm                         |
-" |                        | i case insensitive                |
-" |                        | I case sensitive                  |
-" |------------------------+-----------------------------------|
-" | Change inner word      | ciw                               |
-" | Change inner quotes    | ci"                               |
-" | Change inner paragraph | cip                               |
-" | Change inner tag       | cit                               |
-" | Change as sentence     | cas                               |
-" |                        |                                   |
-" |                        | Other verbs:                      |
-" |                        | delete (d)                        |
-" |                        | indent (>)                        |
-" |                        | visually select (v)               |
-" |                        | yank (y)                          |
-" |------------------------+-----------------------------------|
-" | Search for string      | /   search forward                |
-" |                        | ?   search backward               |
-" |------------------------+-----------------------------------|
-" | Search for string in   | :find <string>                    |
-" | NerdTree               |                                   |
-" |------------------------+-----------------------------------|
-" | Invert line order      | :g/^/m0                           |
-" |------------------------+-----------------------------------|
-			
-
-"|-----------------|
-"| Custom Mappings |
-"|-----------------|
-
-"|----------------------------------------+---------|
-"| Description                            | Command |
-"|----------------------------------------+---------|
-"| Next buffer                            | ;;      |
-"| Previous Buffer                        | aa      |
-"| Equally sized split windows            | <F2>    |
-"| Expand present vert split window       | <F3>    |
-"| Expand present horizontal spit windows | <F4>    |
-"| Remove all trailing whitespaces        | <F5>    |
-"| Change split window                    | Ctrl-J  |
-"|                                        | Ctrl-K  |
-"|                                        | Ctrl-H  |
-"|                                        | Ctrl-L  |
-"| Start NERDTree                         | Ctrl-n  |
-"| Close NERDTree                         | q       |
-"| NERDTree menu                          | m       |
-"|----------------------------------------+---------|
-"
-" #################################
-" ########## Useful Tips ##########
-" #################################
-" 
-" This is where you can set the VIM default directory path:
-"   cd /home/user/my/work/dir (for Linux)
-"   cd c:\Users\<username> (for Windows)
-
-" _vimrc is to windows what .vimrc is to unix
-" copy _vimrc to: 
-" c:\Users\<username>\vim\_vimrc (assuming you installed vim to this path ; recommended) 
