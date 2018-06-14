@@ -1,5 +1,5 @@
 " ##########################################################
-" ##########       David Lin's .vimrc File        #########
+" ##########       David Lin's .vimrc File        ##########
 " ########## https://github.com/davidclin/vim.git ##########
 " ##########################################################
 "
@@ -168,6 +168,7 @@ Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'reedes/vim-colors-pencil'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'airblade/vim-gitgutter'
 " Plugin 'pearofducks/ansible-vim'
 
 " All of your Plugins must be added before these lines:
