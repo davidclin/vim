@@ -1,20 +1,35 @@
 "  David Lin's .vimrc File
+"
+"########## Vundle ##########
+"
+" Vundle is an easy to use and powerful VIM plugin manager.
+"
+" Download
+"
+"   (for Linux)
+"   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+"
+"   (for Windows) 
+"   git clone https://github.com/VundleVim/Vundle.vim.git ./vimfiles/bundle/Vundle.vim 
+"   
+"   Assumes Git is installed in c:\Users\<username> directory and this path is your $HOME.
+"
+" Add Plugins 
+"
+"   See 'Plugins' section below
+"
+" Install Plugins
+"
+"   cd vim
+"   cp .vimrm ~/.vimrc
+"   vim
+"   :PluginList
+"   :PluginInstall
+"   :PluginUpdate
 
-"|--------|
-"| Vundle |
-"|--------|
-
-" Install
-" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-" (for Windows) git clone https://github.com/VundleVim/Vundle.vim.git ./vimfiles/bundle/Vundle.vim (assumes Git is installed in c:\Users\<username> directory and this path is your $HOME)
-" cd vim
-" cp .vimrm ~/.vimrc
-" vim
-" :PluginList
-" :PluginInstall
-
-set nocompatible              " be iMproved, required
-filetype off                  " required
+" ########## Useful VIM Settings ##########
+set nocompatible              
+filetype off                 
 
 " set default directory path example
 " cd /home/user/my/work/dir (for Linux)
