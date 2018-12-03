@@ -315,5 +315,5 @@ set hidden		" Hide buffers when they are abandoned
 			" will activate visual mode preventing you from
 			" pasting to file.
 
-set colorcolumn=72
+set colorcolumn=79
 
