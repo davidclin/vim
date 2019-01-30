@@ -85,7 +85,7 @@
 " | List buffers           | :ls                               |
 " | Open buffer            | :b<#>                             |
 " |------------------------+-----------------------------------|
-" | Sustitution            | :s/match/new_string/[g|c|i]       |
+" | Substitution           | :s/match/new_string/[g|c|i]       |
 " |                        | g global                          |
 " |                        | c confirm                         |
 " |                        | i case insensitive                |
