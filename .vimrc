@@ -84,8 +84,8 @@
 " |------------------------+-----------------------------------|
 " | List buffers           | :ls                               |
 " | Open buffer            | :b<#>                             |
-" |------------------------+-----------------------------------|
-" | Substitution           | :s/match/new_string/[g|c|i]       |
+" |------------------------+-----------------------------------+---+----|
+" | Substitution           | :s/match/new_string/[g            | c | i] |
 " |                        | g global                          |
 " |                        | c confirm                         |
 " |                        | i case insensitive                |
@@ -114,6 +114,11 @@
 " | Fold lines that        | zM => fold all                    |
 " | start with /*          | zR => unfold all                  |
 " | ends with */           | za => toggle fold                 |
+" |------------------------+-----------------------------------|
+" | Pretty print JSON/HTML | :PrettyPrintJSON                  |
+" |                        | :PrettyPrintHTML                  |
+" |                        |                                   |
+" |                        | Note: Requires python and tidy    | 
 " |------------------------+-----------------------------------|
 "
 " ###########################################
@@ -318,6 +323,12 @@ set hidden		" Hide buffers when they are abandoned
                         " Note: If you enable mouse usage, right-clicking
 			" will activate visual mode preventing you from
 			" pasting to file.
+
+" PrettyPrintJSON and PrettyPrintHTML
+command! PrettyPrintJSON %!python -m json.tool
+command! PrettyPrintHTML !tidy -mi -html -wrap 0 %
+command! PrettyPrintXML !tidy -mi -xml -wrap 0 %
+
 
 set colorcolumn=79
 
