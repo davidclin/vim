@@ -118,7 +118,9 @@
 " | Pretty print JSON/HTML | :PrettyPrintJSON                  |
 " |                        | :PrettyPrintHTML                  |
 " |                        |                                   |
-" |                        | Note: Requires python and tidy    | 
+" |                        | Note: Requires python and tidy    |
+" |------------------------+-----------------------------------|
+" | Change gVIM font size  | :set guifont=*                    |
 " |------------------------+-----------------------------------|
 "
 " ###########################################
