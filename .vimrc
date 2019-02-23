@@ -76,6 +76,10 @@
 " | Deletes lines that     | :g/profile/d                      |
 " | match pattern          |                                   |
 " |------------------------+-----------------------------------|
+" | Delete all lines that  | :%g!/price/d                      |
+" | that do NOT match      |                                   |
+" | pattern                |                                   |
+" |------------------------+-----------------------------------|
 " | Open web page from vim | gx                                |
 " |------------------------+-----------------------------------|
 " | Table Mode             | <leader>tm                        |
