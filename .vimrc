@@ -80,6 +80,17 @@
 " | that do NOT match      |                                   |
 " | pattern                |                                   |
 " |------------------------+-----------------------------------|
+" | Surround entire line   | yss"                              |
+" | with quotation         |                                   |
+" |                        |                                   |
+" | Delete quotation       | ds"                               |
+" | surrounding text       |                                   |
+" |                        |                                   |
+" | Add quotation around   | add long string of dashes         |
+" | multiple lines         | at beggining/end of lines         |
+" |                        | then cntl+v lines followed by     |
+" |                        | S"                                |
+" |------------------------+-----------------------------------|
 " | Open web page from vim | gx                                |
 " |------------------------+-----------------------------------|
 " | Table Mode             | <leader>tm                        |
@@ -93,8 +104,8 @@
 " |------------------------+-----------------------------------|
 " | List buffers           | :ls                               |
 " | Open buffer            | :b<#>                             |
-" |------------------------+-----------------------------------|
-" | Substitution           | :s/match/new_string/[g|c|i]       |
+" |------------------------+-----------------------------------+---+----|
+" | Substitution           | :s/match/new_string/[g            | c | i] |
 " |                        | g global                          |
 " |                        | c confirm                         |
 " |                        | i case insensitive                |
