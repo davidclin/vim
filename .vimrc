@@ -177,6 +177,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'   " let Vundle manage Vundle, required
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-fugitive'
 Plugin 'easymotion/vim-easymotion'
 "Plugin 'vim-airline/vim-airline'
