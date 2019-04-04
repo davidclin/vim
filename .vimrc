@@ -80,6 +80,9 @@
 " | that do NOT match      |                                   |
 " | pattern                |                                   |
 " |------------------------+-----------------------------------|
+" | Delete to end of line  | :%s/{pattern}.*//                 |
+" | after pattern          |                                   |
+" |------------------------+-----------------------------------|
 " | Surround entire line   | yss"                              |
 " | with quotation         |                                   |
 " |                        |                                   |
