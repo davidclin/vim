@@ -107,8 +107,8 @@
 " |------------------------+-----------------------------------|
 " | List buffers           | :ls                               |
 " | Open buffer            | :b<#>                             |
-" |------------------------+-----------------------------------+---+----|
-" | Substitution           | :s/match/new_string/[g            | c | i] |
+" |------------------------+-----------------------------------+
+" | Substitution           | :s/match/new_string/[g            |
 " |                        | g global                          |
 " |                        | c confirm                         |
 " |                        | i case insensitive                |
@@ -145,6 +145,16 @@
 " |------------------------+-----------------------------------|
 " | Change gVIM font size  | :set guifont=*                    |
 " |------------------------+-----------------------------------|
+"
+" ################################################
+" ########## Creating macro to record motions ####
+" ################################################
+"
+" Type the letter 'q' followed by a character [a-z] to start recording
+" Make your edits then hit 'q' to stop the recording
+" Enter N@[a-z] where N is number of iterations and [a-z] is the letter
+" chosen for your recording.
+"
 "
 " ###########################################
 " ########## Useful Linux Commands ##########
