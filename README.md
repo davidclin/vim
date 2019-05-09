@@ -20,13 +20,18 @@ Summary
 - Paste code with formatting preserved
 
 Plugins
-- Plugin 'VundleVim/Vundle.vim'
+- Plugin 'VundleVim/Vundle.vim'   " let Vundle manage Vundle, required
+- Plugin 'tpope/vim-surround'
+- Plugin 'tpope/vim-repeat'
 - Plugin 'tpope/vim-fugitive'
 - Plugin 'easymotion/vim-easymotion'
-- Plugin 'vim-airline/vim-airline'
-- Plugin 'vim-airline/vim-airline-themes'
+- Plugin 'itchyny/lightline.vim'
 - Plugin 'kien/ctrlp.vim'
 - Plugin 'junegunn/goyo.vim'
 - Plugin 'tomtom/tcomment_vim'
 - Plugin 'dhruvasagar/vim-table-mode'
 - Plugin 'reedes/vim-colors-pencil'
+- Plugin 'scrooloose/nerdtree'
+- Plugin 'jistr/vim-nerdtree-tabs'
+- Plugin 'airblade/vim-gitgutter'
+- Plugin 'davidhalter/jedi-vim'
