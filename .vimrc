@@ -99,6 +99,8 @@
 " | Table Mode             | <leader>tm                        |
 " |                        | use single pipe to create cell(s) |
 " |                        | use double pipe to create line    |
+" |                        | use :Tableize for existing comma  |
+" |                        |     separated data                |
 " |------------------------+-----------------------------------|
 " | Easy Motion            | <leader><leader>w                 |
 " |                        | <leader><leader>b                 |
