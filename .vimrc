@@ -72,6 +72,10 @@
 " | Description            | Command                           |
 " |------------------------+-----------------------------------|
 " | Find number of matches | :%s/pattern//gn                   |
+" |                        |                                   |
+" |                        | Omit g to display number of lines |
+" |                        | where patten matches like so:     |
+" |                        | :%s/pattern//n                    |
 " |------------------------+-----------------------------------|
 " | Deletes lines that     | :g/profile/d                      |
 " | match pattern          |                                   |
@@ -100,7 +104,7 @@
 " |                        | use single pipe to create cell(s) |
 " |                        | use double pipe to create line    |
 " |                        | use :Tableize for existing comma  |
-" |                        |     separated data                |
+" |                        | separated data                    |
 " |------------------------+-----------------------------------|
 " | Easy Motion            | <leader><leader>w                 |
 " |                        | <leader><leader>b                 |
@@ -109,7 +113,7 @@
 " |------------------------+-----------------------------------|
 " | List buffers           | :ls                               |
 " | Open buffer            | :b<#>                             |
-" |------------------------+-----------------------------------+
+" |------------------------+-----------------------------------|
 " | Substitution           | :s/match/new_string/[g            |
 " |                        | g global                          |
 " |                        | c confirm                         |
