@@ -75,6 +75,7 @@
 " |                        |                                   |
 " |                        | Omit g to display number of lines |
 " |                        | where patten matches like so:     |
+" |                        |                                   |
 " |                        | :%s/pattern//n                    |
 " |------------------------+-----------------------------------|
 " | Deletes lines that     | :g/profile/d                      |
