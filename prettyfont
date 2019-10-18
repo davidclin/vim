@@ -9,8 +9,12 @@ Search for 'dell' then modify next section immediately below it with your hostna
 Use this line if triangle font is broken:
 PS1="$TITLEBAR\n${PROMT_USER}${PROMT_HOST}${PROMT_PWD}${SEPARATOR_4}${PROMT_INPUT}"
 
+##---------------------------------------
+## Add useful aliases while you are at it
+##---------------------------------------
+alias ff="sudo find / -type f -name"
 
-Add below to ~/.bashrc
+Add below to end of ~/.bashrc
 ##	+-----------------------------------+-----------------------------------+
 ##	|                                                                       |
 ##	|                            FANCY BASH PROMT                           |
