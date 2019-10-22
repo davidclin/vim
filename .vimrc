@@ -107,6 +107,8 @@
 " |                        | use double pipe to create line    |
 " |                        | use :Tableize for existing comma  |
 " |                        | separated data                    |
+" |                        | use :Tableize/{pattern} to use    |
+" |                        | custom delimeter (eg: ;)          |
 " |------------------------+-----------------------------------|
 " | Easy Motion            | <leader><leader>w                 |
 " |                        | <leader><leader>b                 |
