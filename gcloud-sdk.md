@@ -18,10 +18,11 @@ gcloud config list        To list the properties in your active SDK configuratio
 gcloud info               To view information about your Cloud SDK installation and active SDK configuration
 gcloud help               See help for command
 
+Use the --project PROJECTNAME option to run gcloud commands in another project.
 
 gcloud compute instances [start|stop] INSTANCE_NAME     start/stop instances
 gcloud projects list                                    list projects
-gcloud config configurations list                       list existing named configurations
+gcloud config configurations list                       list existing named configurations ; same as `gcloud config list`
 gcloud config configurations activate NAMED_CONFIG      activates existing named configuration
 gcloud config set account `ACCOUNT`                     change to another account
 gcloud config set project `PROJECT ID`                  change to another project
@@ -30,7 +31,6 @@ gcloud config set project `PROJECT ID`                  change to another projec
 # Tips
 <pre>
 Have console generate gcloud commands for you!
-Use the --project PROJECTNAME option to run gcloud commands in another project.
 </pre>
 
 # Launch a preemptible custom compute engine with 1 vCPU and 1 GB in Standard tier
