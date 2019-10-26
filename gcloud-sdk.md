@@ -15,7 +15,12 @@ gcloud info           To view information about your Cloud SDK installation and 
 gcloud help
 
 
-gcloud compute instances [start|stop] INSTANCE_NAME
+gcloud compute instances [start|stop] INSTANCE_NAME     start/stop instances
+gcloud projects list                                    list projects
+gcloud config configurations list                       list existing named configurations
+gcloud config configurations activate NAMED_CONFIG      activates existing named configuration
+gcloud config set account `ACCOUNT`                     change to another account
+gcloud config set project `PROJECT ID`                  change to another project
 </pre>
 
 
