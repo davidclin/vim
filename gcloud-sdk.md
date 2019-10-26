@@ -10,10 +10,13 @@ gcloud init
 
 # Useful Commands
 <pre>
-gcloud auth list      To list accounts whose credentials are stored on the local system
-gcloud config list    To list the properties in your active SDK configuration (similar to showing output of ~/.aws/config)
-gcloud info           To view information about your Cloud SDK installation and active SDK configuration
-gcloud help
+gcloud version            List current SDK version
+gcloud components list    List latest version of Cloud SDK 
+gcloud components update  Update all installed components to the latest version
+gcloud auth list          To list accounts whose credentials are stored on the local system
+gcloud config list        To list the properties in your active SDK configuration (similar to showing output of ~/.aws/config)
+gcloud info               To view information about your Cloud SDK installation and active SDK configuration
+gcloud help               See help for command
 
 
 gcloud compute instances [start|stop] INSTANCE_NAME     start/stop instances
