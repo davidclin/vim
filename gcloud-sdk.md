@@ -13,8 +13,16 @@ gcloud auth list      To list accounts whose credentials are stored on the local
 gcloud config list    To list the properties in your active SDK configuration (similar to showing output of ~/.aws/config)
 gcloud info           To view information about your Cloud SDK installation and active SDK configuration
 gcloud help
+
+
+gcloud compute instances [start|stop] INSTANCE_NAME
 </pre>
 
+
+# Tips
+<pre>
+Have console generate gcloud commands for you!
+</pre>
 
 # Resources
 https://cloud.google.com/sdk
