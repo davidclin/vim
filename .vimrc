@@ -239,6 +239,10 @@ Plugin 'davidhalter/jedi-vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" Get 2-space YAML as the default when hitting carriage return after the colon
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 
