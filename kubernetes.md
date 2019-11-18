@@ -1,5 +1,21 @@
 # Google Kubernetes Engine
 
+## Useful commands
+<pre>
+## To get inside a Pod
+kubectl exec -it dns-demo-1 /bin/bash
+kubectl exec -it pvc-demo-pod -- sh
+
+## Install ping and curl tool
+apt-get update
+apt-get install -y iputils-ping
+apt-get install -y curl
+
+## Example of how to ping a service using K8S DNS
+ping POD_NAME.SUBDOMAIN.NAMESPACE.svc.cluster.local
+ping dns-demo-2.dns-demo.default.svc.cluster.local
+</pre>
+
 ## Prime useful env variables
 <pre>
 export my_zone=us-central1-a
