@@ -2,6 +2,9 @@
 
 ## Useful commands
 <pre>
+## Enabled autocompletion for kubectl command line 
+source <(kubectl completion bash)
+
 ## To get inside a Pod
 kubectl exec -it dns-demo-1 /bin/bash
 kubectl exec -it pvc-demo-pod -- sh
