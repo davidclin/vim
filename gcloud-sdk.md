@@ -10,6 +10,7 @@ gcloud init
 
 # Useful Commands
 <pre>
+gcloud beta interactive   Interactive mode
 gcloud version            List current SDK version
 gcloud components list    List latest version of Cloud SDK 
 gcloud components update  Update all installed components to the latest version
