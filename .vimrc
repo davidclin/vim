@@ -69,92 +69,94 @@
 " ########## Useful VIM Commands ##########
 " #########################################
 "
-" |------------------------+-----------------------------------|
-" | Description            | Command                           |
-" |------------------------+-----------------------------------|
-" | Find number of matches | :%s/pattern//gn                   |
-" |                        |                                   |
-" |                        | Omit g to display number of lines |
-" |                        | where patten matches like so:     |
-" |                        |                                   |
-" |                        | :%s/pattern//n                    |
-" |------------------------+-----------------------------------|
-" | Deletes lines that     | :g/profile/d                      |
-" | match pattern          |                                   |
-" |------------------------+-----------------------------------|
-" | Delete all lines that  | :%g!/price/d                      |
-" | that do NOT match      |                                   |
-" | pattern                |                                   |
-" |------------------------+-----------------------------------|
-" | Delete to end of line  | :%s/{pattern}.*//                 |
-" | after pattern          |                                   |
-" |------------------------+-----------------------------------|
-" | Surround entire line   | yss"                              |
-" | with quotation         |                                   |
-" |                        |                                   |
-" | Delete quotation       | ds"                               |
-" | surrounding text       |                                   |
-" |                        |                                   |
-" | Add quotation around   | add long string of dashes         |
-" | multiple lines         | at beggining/end of lines         |
-" |                        | then cntl+v lines followed by     |
-" |                        | S"                                |
-" |------------------------+-----------------------------------|
-" | Open web page from vim | gx                                |
-" |------------------------+-----------------------------------|
-" | Table Mode             | <leader>tm                        |
-" |                        | use single pipe to create cell(s) |
-" |                        | use double pipe to create line    |
-" |                        | use :Tableize for existing comma  |
-" |                        | separated data                    |
-" |                        | use :Tableize/{pattern} to use    |
-" |                        | custom delimeter (eg: ;)          |
-" |------------------------+-----------------------------------|
-" | Easy Motion            | <leader><leader>w                 |
-" |                        | <leader><leader>b                 |
-" |------------------------+-----------------------------------|
-" | Execute shell cmd      | :!<command>                       |
-" |------------------------+-----------------------------------|
-" | List buffers           | :ls                               |
-" | Open buffer            | :b<#>                             |
-" |------------------------+-----------------------------------|
-" | Substitution           | :s/match/new_string/[g            |
-" |                        | g global                          |
-" |                        | c confirm                         |
-" |                        | i case insensitive                |
-" |                        | I case sensitive                  |
-" |------------------------+-----------------------------------|
-" | Change inner word      | ciw                               |
-" | Change inner quotes    | ci"                               |
-" | Change inner paragraph | cip                               |
-" | Change inner tag       | cit                               |
-" | Change as sentence     | cas                               |
-" |                        |                                   |
-" |                        | Other verbs:                      |
-" |                        | delete (d)                        |
-" |                        | indent (>)                        |
-" |                        | visually select (v)               |
-" |                        | yank (y)                          |
-" |------------------------+-----------------------------------|
-" | Search for string      | /   search forward                |
-" |                        | ?   search backward               |
-" |------------------------+-----------------------------------|
-" | Search for string in   | :find <string>                    |
-" | NerdTree               |                                   |
-" |------------------------+-----------------------------------|
-" | Invert line order      | :g/^/m0                           |
-" |------------------------+-----------------------------------|
-" | Fold lines that        | zM => fold all                    |
-" | start with /*          | zR => unfold all                  |
-" | ends with */           | za => toggle fold                 |
-" |------------------------+-----------------------------------|
-" | Pretty print JSON/HTML | :PrettyPrintJSON                  |
-" |                        | :PrettyPrintHTML                  |
-" |                        |                                   |
-" |                        | Note: Requires python and tidy    |
-" |------------------------+-----------------------------------|
-" | Change gVIM font size  | :set guifont=*                    |
-" |------------------------+-----------------------------------|
+" |----------------------------+-----------------------------------|
+" | Description                | Command                           |
+" |----------------------------+-----------------------------------|
+" | Find number of matches     | :%s/pattern//gn                   |
+" |                            |                                   |
+" |                            | Omit g to display number of lines |
+" |                            | where patten matches like so:     |
+" |                            |                                   |
+" |                            | :%s/pattern//n                    |
+" |----------------------------+-----------------------------------|
+" | Deletes lines that         | :g/profile/d                      |
+" | match pattern              |                                   |
+" |----------------------------+-----------------------------------|
+" | Delete all lines that      | :%g!/price/d                      |
+" | that do NOT match          |                                   |
+" | pattern                    |                                   |
+" |----------------------------+-----------------------------------|
+" | Delete to end of line      | :%s/{pattern}.*//                 |
+" | after pattern              |                                   |
+" |----------------------------+-----------------------------------|
+" | Sort and remove duplicates | :sort u                           |
+" |----------------------------+-----------------------------------|
+" | Surround entire line       | yss"                              |
+" | with quotation             |                                   |
+" |                            |                                   |
+" | Delete quotation           | ds"                               |
+" | surrounding text           |                                   |
+" |                            |                                   |
+" | Add quotation around       | add long string of dashes         |
+" | multiple lines             | at beggining/end of lines         |
+" |                            | then cntl+v lines followed by     |
+" |                            | S"                                |
+" |----------------------------+-----------------------------------|
+" | Open web page from vim     | gx                                |
+" |----------------------------+-----------------------------------|
+" | Table Mode                 | <leader>tm                        |
+" |                            | use single pipe to create cell(s) |
+" |                            | use double pipe to create line    |
+" |                            | use :Tableize for existing comma  |
+" |                            | separated data                    |
+" |                            | use :Tableize/{pattern} to use    |
+" |                            | custom delimeter (eg: ;)          |
+" |----------------------------+-----------------------------------|
+" | Easy Motion                | <leader><leader>w                 |
+" |                            | <leader><leader>b                 |
+" |----------------------------+-----------------------------------|
+" | Execute shell cmd          | :!<command>                       |
+" |----------------------------+-----------------------------------|
+" | List buffers               | :ls                               |
+" | Open buffer                | :b<#>                             |
+" |----------------------------+-----------------------------------|
+" | Substitution               | :s/match/new_string/[g            |
+" |                            | g global                          |
+" |                            | c confirm                         |
+" |                            | i case insensitive                |
+" |                            | I case sensitive                  |
+" |----------------------------+-----------------------------------|
+" | Change inner word          | ciw                               |
+" | Change inner quotes        | ci"                               |
+" | Change inner paragraph     | cip                               |
+" | Change inner tag           | cit                               |
+" | Change as sentence         | cas                               |
+" |                            |                                   |
+" |                            | Other verbs:                      |
+" |                            | delete (d)                        |
+" |                            | indent (>)                        |
+" |                            | visually select (v)               |
+" |                            | yank (y)                          |
+" |----------------------------+-----------------------------------|
+" | Search for string          | /   search forward                |
+" |                            | ?   search backward               |
+" |----------------------------+-----------------------------------|
+" | Search for string in       | :find <string>                    |
+" | NerdTree                   |                                   |
+" |----------------------------+-----------------------------------|
+" | Invert line order          | :g/^/m0                           |
+" |----------------------------+-----------------------------------|
+" | Fold lines that            | zM => fold all                    |
+" | start with /*              | zR => unfold all                  |
+" | ends with */               | za => toggle fold                 |
+" |----------------------------+-----------------------------------|
+" | Pretty print JSON/HTML     | :PrettyPrintJSON                  |
+" |                            | :PrettyPrintHTML                  |
+" |                            |                                   |
+" |                            | Note: Requires python and tidy    |
+" |----------------------------+-----------------------------------|
+" | Change gVIM font size      | :set guifont=*                    |
+" |----------------------------+-----------------------------------|
 "
 " ##########################################
 " ########## Increase default register #####
