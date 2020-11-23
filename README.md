@@ -41,6 +41,7 @@ Plugins
 - terminal (as Administrator)
 - vim --version | grep _vimrc  (to get path of _vimrc file)
 - git clone https://github.com/davidclin/vim.git
+- git clone https://github.com/VundleVim/Vundle.vim.git ./vimfiles/bundle/Vundle.vim
 - cd vim
 - copy .vimrc to _vimrc
 - remove lines 
