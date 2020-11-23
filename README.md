@@ -43,12 +43,12 @@ Plugins
 - git clone https://github.com/davidclin/vim.git
 - cd vim
 - copy .vimrc to _vimrc
-- comment 
+- remove lines 
 <pre>
 set nocompatible
 filetype off
 </pre>
-- uncomment
+- uncomment lines
 <pre>
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
