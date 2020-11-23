@@ -40,7 +40,8 @@ Plugins
 
 ## Install apps
 - open Terminal (run as Administrator)
-- choco install -y vim | pin gVIM to taskbar
+- choco install -y vim 
+- pin gVIM (not VIM) to your taskbar
 - (OPTIONAL) choco install -y python3
 - (OPTIONAL) choco install -y git 
 - (OPTIONAL) pip install boto3
