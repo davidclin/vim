@@ -39,6 +39,7 @@ Plugins
 # Quick Windows 10 Install
 - open Terminal (run as Administrator)
 - choco install python3
+- choco install git
 - choco install pycharm-community 
 - choco install vim
 - vim --version | grep _vimrc  (to get path of _vimrc file)
