@@ -71,5 +71,5 @@ For Windows, _vimrc usually lives under $HOME
 - choco install -y pycharm-community 
 - pin Pycharm to taskbar 
 - launch Pycharm and download IdeaVim and AWS Toolkit during install
-- copy _vimrc to _ideavimrc
+- copy _vimrc to $HOME\_ideavimrc
 - (OPTIONAL) create new Python file in Pycharm then Ctrl+Alt+S --> Project:PycharmProjects --> Python Interpreter --> '+' sign --> type boto3 --> Install package
