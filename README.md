@@ -35,3 +35,21 @@ Plugins
 - Plugin 'jistr/vim-nerdtree-tabs'
 - Plugin 'airblade/vim-gitgutter'
 - Plugin 'davidhalter/jedi-vim'
+
+# Quick Windows 10 Install
+- choco install vim
+- terminal (as Administrator)
+- vim --version | grep _vimrc  (to get path of _vimrc file)
+- git clone https://github.com/davidclin/vim.git
+- cd vim
+- copy .vimrc to _vimrc
+- comment 
+<pre>
+set nocompatible
+filetype off
+</pre>
+- uncomment
+<pre>
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+</pre>
