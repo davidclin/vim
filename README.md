@@ -36,7 +36,7 @@ Plugins
 - Plugin 'airblade/vim-gitgutter'
 - Plugin 'davidhalter/jedi-vim'
 
-# Quick Windows 10 Install
+# Quick Windows 10 Install ( Python3 | Git | VIM | Vundle | Pycharm | IdeaVIM )  
 - open Terminal (run as Administrator)
 - choco install -y python3
 - choco install -y git
@@ -45,7 +45,7 @@ Plugins
 - launch Pycharm and download IdeaVim and AWS Toolkit
 - create new Python file in Pycharm then Ctrl+Alt+S --> Project:PycharmProjects --> Python Interpreter --> '+' sign --> type boto3 --> Install package
 - vim --version | grep _vimrc  (to get path of _vimrc file)
-- git clone https://github.com/davidclin/vim.git
+- git clone https://github.com/davidclin/vim-davidclin.git
 - git clone https://github.com/VundleVim/Vundle.vim.git ./vimfiles/bundle/Vundle.vim
 - cp .vimrc ../_vimrc  (Windows 10 GVIM looks for _vimrc instead of .vimrc)
 - edit _vimrc file using Pycharm (since it will have Administrative rights; trying to edit using Terminal/Powershell isn't going to work)
