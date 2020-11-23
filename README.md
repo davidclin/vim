@@ -62,10 +62,10 @@ For Windows, _vimrc usually lives under $HOME
 - cp _vimrc $HOME\_vimrc  (tip: use Notepad if you're unable to edit the file using other programs then copy file to $HOME\_vimrc)
 
 ## Install VIM plugins
-launch gVIM
-:PluginList
-:PluginInstall
-:PluginUpdate
+- launch gVIM
+- :PluginList
+- :PluginInstall
+- :PluginUpdate
 
 # Quick Windows 10 Install with Pycharm+IdeaVIM Integration  
 - choco install -y pycharm-community | pin to taskbar 
