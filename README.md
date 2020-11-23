@@ -37,14 +37,16 @@ Plugins
 - Plugin 'davidhalter/jedi-vim'
 
 # Quick Windows 10 Install
-- choco install vim
 - terminal (as Administrator)
+- choco install pycharm-community 
+- choco install vim
+- cd vim
 - vim --version | grep _vimrc  (to get path of _vimrc file)
 - git clone https://github.com/davidclin/vim.git
 - git clone https://github.com/VundleVim/Vundle.vim.git ./vimfiles/bundle/Vundle.vim
-- cd vim
-- copy .vimrc to _vimrc
-- remove lines 
+- cp .vimrc ../_vimrc  (Windows 10 GVIM looks for _vimrc instead of .vimrc)
+- cd ..
+- remove lines from _vimrc
 <pre>
 set nocompatible
 filetype off
