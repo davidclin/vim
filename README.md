@@ -42,6 +42,7 @@ Plugins
 - choco install -y git
 - choco install -y vim
 - choco install -y pycharm-community 
+- launch Pycharm and download IdeaVim and AWS Toolkit
 - vim --version | grep _vimrc  (to get path of _vimrc file)
 - git clone https://github.com/davidclin/vim.git
 - git clone https://github.com/VundleVim/Vundle.vim.git ./vimfiles/bundle/Vundle.vim
