@@ -53,6 +53,9 @@ Plugins
 This may come in handy...
 - vim --version | grep vimrc  (to get path of all vimrc files)
 
+For Linux  , .vimrc usually lives under ~/.vimrc
+For Windows, _vimrc usually lives under $HOME
+
 ## Pull repo and copy _vimrc to $HOME
 - git clone https://github.com/davidclin/vim-davidclin.git
 - cd vim-davidclin
