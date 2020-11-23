@@ -7,7 +7,7 @@
   \_/ \_/ \_/ 
 </pre>
 
-This repo contains useful VIM settings and Plugins I use in my .vimrc file.
+This repo contains useful VIM settings and Plugins I use in my .vimrc (for Linux) and _vimrc (for Windows).
 
 Summary
 - Relative numbering
