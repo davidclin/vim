@@ -68,6 +68,8 @@ For Windows, _vimrc usually lives under $HOME
 - :PluginUpdate
 
 # Quick Windows 10 Install with Pycharm+IdeaVIM Integration  
-- choco install -y pycharm-community | pin to taskbar 
+- choco install -y pycharm-community 
+- pin Pycharm to taskbar 
 - launch Pycharm and download IdeaVim and AWS Toolkit during install
-- create new Python file in Pycharm then Ctrl+Alt+S --> Project:PycharmProjects --> Python Interpreter --> '+' sign --> type boto3 --> Install package
+- copy _vimrc to _ideavimrc
+- (OPTIONAL) create new Python file in Pycharm then Ctrl+Alt+S --> Project:PycharmProjects --> Python Interpreter --> '+' sign --> type boto3 --> Install package
