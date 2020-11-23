@@ -38,10 +38,10 @@ Plugins
 
 # Quick Windows 10 Install
 - open Terminal (run as Administrator)
-- choco install python3
-- choco install git
-- choco install vim
-- choco install pycharm-community 
+- choco install -y python3
+- choco install -y git
+- choco install -y vim
+- choco install -y pycharm-community 
 - vim --version | grep _vimrc  (to get path of _vimrc file)
 - git clone https://github.com/davidclin/vim.git
 - git clone https://github.com/VundleVim/Vundle.vim.git ./vimfiles/bundle/Vundle.vim
