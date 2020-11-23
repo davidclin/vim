@@ -36,27 +36,34 @@ Plugins
 - Plugin 'airblade/vim-gitgutter'
 - Plugin 'davidhalter/jedi-vim'
 
-# Quick Windows 10 Install ( Python3 | Git | VIM | Vundle | Pycharm | IdeaVIM )  
+# Quick Windows 10 Install with gVIM 
+
+## Install apps
 - open Terminal (run as Administrator)
-- choco install -y python3
-- choco install -y git
-- choco install -y vim (pin gVIM to your taskbar)
-- choco install -y pycharm-community 
-- launch Pycharm and download IdeaVim and AWS Toolkit
-- create new Python file in Pycharm then Ctrl+Alt+S --> Project:PycharmProjects --> Python Interpreter --> '+' sign --> type boto3 --> Install package
-- vim --version | grep _vimrc  (to get path of _vimrc file)
+- choco install -y vim | pin gVIM to taskbar
+- (OPTIONAL) choco install -y python3
+- (OPTIONAL) choco install -y git 
+- (OPTIONAL) pip install boto3
+
+## Install Vundle
+- git clone https://github.com/VundleVim/Vundle.vim.git $HOME/vimfiles/bundle/Vundle.vim  
+
+## To find location of all vimrc file(s)
+This may come in handy...
+- vim --version | grep vimrc  (to get path of all vimrc files)
+
+## Pull repo and copy _vimrc to $HOME
 - git clone https://github.com/davidclin/vim-davidclin.git
-- cp .vimrc $HOME/_vimrc  (Windows 10 GVIM looks for _vimrc instead of .vimrc)
-- cd $HOME
-- git clone https://github.com/VundleVim/Vundle.vim.git ./vimfiles/bundle/Vundle.vim
-- edit _vimrc file using Pycharm (since it will have Administrative rights; trying to edit using Terminal/Powershell isn't going to work)
-- remove lines from _vimrc
-<pre>
-set nocompatible
-filetype off
-</pre>
-- uncomment lines
-<pre>
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-</pre>
+- cd vim-davidclin
+- cp _vimrc $HOME\_vimrc  (tip: use Notepad if you're unable to edit the file using other programs then copy file to $HOME\_vimrc)
+
+## Install VIM plugins
+launch gVIM
+:PluginList
+:PluginInstall
+:PluginUpdate
+
+# Quick Windows 10 Install with Pycharm+IdeaVIM Integration  
+- choco install -y pycharm-community | pin to taskbar 
+- launch Pycharm and download IdeaVim and AWS Toolkit during install
+- create new Python file in Pycharm then Ctrl+Alt+S --> Project:PycharmProjects --> Python Interpreter --> '+' sign --> type boto3 --> Install package
