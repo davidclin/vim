@@ -40,14 +40,15 @@ Plugins
 - open Terminal (run as Administrator)
 - choco install -y python3
 - choco install -y git
-- choco install -y vim
+- choco install -y vim (pin gVIM to your taskbar)
 - choco install -y pycharm-community 
 - launch Pycharm and download IdeaVim and AWS Toolkit
 - create new Python file in Pycharm then Ctrl+Alt+S --> Project:PycharmProjects --> Python Interpreter --> '+' sign --> type boto3 --> Install package
 - vim --version | grep _vimrc  (to get path of _vimrc file)
 - git clone https://github.com/davidclin/vim-davidclin.git
+- cp .vimrc $HOME/_vimrc  (Windows 10 GVIM looks for _vimrc instead of .vimrc)
+- cd $HOME
 - git clone https://github.com/VundleVim/Vundle.vim.git ./vimfiles/bundle/Vundle.vim
-- cp .vimrc ../_vimrc  (Windows 10 GVIM looks for _vimrc instead of .vimrc)
 - edit _vimrc file using Pycharm (since it will have Administrative rights; trying to edit using Terminal/Powershell isn't going to work)
 - remove lines from _vimrc
 <pre>
