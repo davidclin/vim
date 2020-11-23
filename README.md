@@ -37,7 +37,7 @@ Plugins
 - Plugin 'davidhalter/jedi-vim'
 
 # Quick Windows 10 Install
-- terminal (as Administrator)
+- powershell terminal (run as Administrator)
 - choco install pycharm-community 
 - choco install vim
 - cd vim
