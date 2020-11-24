@@ -49,13 +49,14 @@ Plugins
 ## Install Vundle
 - git clone https://github.com/VundleVim/Vundle.vim.git $HOME/vimfiles/bundle/Vundle.vim  
 
-## To find location of all vimrc file(s)
-This may come in handy...
+## To find location of all vimrc file(s) and order of operation
+This may come in handy when trying to figure out where vim looks to execute
 - vim --version | grep vimrc  (to get path of all vimrc files)
 
 For Linux  , .vimrc usually lives under ~/.vimrc
 For Windows, _vimrc usually lives under $HOME
 
+Depending on the output of the command above
 ## Pull repo and copy _vimrc to $HOME
 - git clone https://github.com/davidclin/vim-davidclin.git
 - cd vim-davidclin
