@@ -21,6 +21,7 @@ Summary
 
 Plugins
 - Plugin 'VundleVim/Vundle.vim'   " let Vundle manage Vundle, required
+- Plugin 'ycm-core/YouCompleteMe'
 - Plugin 'tpope/vim-surround'
 - Plugin 'tpope/vim-repeat'
 - Plugin 'tpope/vim-fugitive'
