@@ -38,7 +38,7 @@ Plugins
 - Plugin 'davidhalter/jedi-vim'
 
 # Useful troubleshooting commands
-- :options                            view settings
+- :options                            view set commands
 - :echo has('python3_compiled')       verify if python3/dyn is enabled
 - :echo has('win64')                  verify if 32-bit or 64-bit
 - :sessions                           useful to view logs if plugin failure occurs
