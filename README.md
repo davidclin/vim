@@ -37,6 +37,13 @@ Plugins
 - Plugin 'airblade/vim-gitgutter'
 - Plugin 'davidhalter/jedi-vim'
 
+# Useful troubleshooting commands
+- :options                            view settings
+- :echo has('python3_compiled')       verify if python3/dyn is enabled
+- :echo has('win64')                  verify if 32-bit or 64-bit
+- :sessions                           useful to view logs if plugin failure occurs
+- :version                            contains useful info such as supported features, 32/64-bit compiled, dll used, etc.)
+
 # Quick Windows 10 Install with gVIM 
 
 ## Install apps
@@ -51,7 +58,7 @@ Plugins
 - git clone https://github.com/VundleVim/Vundle.vim.git $HOME/vimfiles/bundle/Vundle.vim  
 
 ## To find location of all vimrc file(s) and order of operation
-This may come in handy when trying to figure out where vim looks to execute
+This may come in handy when trying to figure out where vim looks to execute .vimrc
 - vim --version | grep vimrc  (to get path of all vimrc files)
 
 For Linux  , .vimrc usually lives under ~/.vimrc
