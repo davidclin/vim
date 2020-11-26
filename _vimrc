@@ -240,8 +240,6 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-fugitive'
 Plugin 'easymotion/vim-easymotion'
-"Plugin 'vim-airline/vim-airline'
-"Plugin 'vim-airline/vim-airline-themes'
 Plugin 'itchyny/lightline.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'junegunn/goyo.vim'
@@ -252,7 +250,7 @@ Plugin 'reedes/vim-colors-pencil'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'davidhalter/jedi-vim'
-" Plugin 'pearofducks/ansible-vim'
+"Plugin 'pearofducks/ansible-vim'
 
 " All of your Plugins must be added before these lines:
 call vundle#end()            " required
@@ -282,16 +280,6 @@ nnoremap aa :bp<CR>
 " Note: When enabled, this will break your jj/kk/jk imap rules to Esc
 
 set laststatus=2
-
-" Set Airline Theme
-" https://github.com/vim-airline/vim-airline/wiki/Screenshots
-let g:airline_theme='simple'
-
-" Automatically displays all buffers when there's only one tab open.
-let g:airline#extensions#tabline#enabled = 1
-
-" Show word count
-let g:airline#extensions#wordcount#enabled = 1
 
 " Set large history and undo buffer
 set history=1000
