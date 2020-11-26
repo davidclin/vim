@@ -213,15 +213,21 @@ filetype off
 " ###################################################################
 
 "
-" (for Windows)
+" for Windows
 set rtp+=$HOME/vimfiles/bundle/Vundle.vim/
 call vundle#begin('$HOME/vimfiles/bundle/')
+
+" for the YouCompleteMe Plugin, you will need to specify the location of your Python interpreter
+"set pythonthreedll=python37.dll
+"set pythonthreehome=C:\Python37
+"set encoding=utf-8
 
 " #############################
 " ########## Plugins ##########
 " #############################
 
 Plugin 'VundleVim/Vundle.vim'   " let Vundle manage Vundle, required
+"Plugin 'ycm-core/YouCompleteMe'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-fugitive'
