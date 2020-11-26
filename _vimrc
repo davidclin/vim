@@ -77,10 +77,12 @@
 " |-------------------------------------+-----------------------------------|
 " | Description                         | Command                           |
 " |-------------------------------------+-----------------------------------|
+" | Useful mapping(s)                   | F5  removes trailing whitespaces  |
+" |-------------------------------------+-----------------------------------|
+" | Zen mode                            | :Goyo / :Goyo!                    |
+" |-------------------------------------+-----------------------------------|
 " | How to use equivalent of            | cntl+q                            |
 " | cntl+v in Windows                   |                                   |
-" |-------------------------------------+-----------------------------------|
-" | Useful mappings                     | F5  removes trailing whitespaces  |
 " |-------------------------------------+-----------------------------------|
 " | Folds                               | zM  => fold all                   |
 " |                                     | zR  => unfold all                 |
@@ -248,6 +250,9 @@ call vundle#begin('$HOME/vimfiles/bundle/')
 
 Plugin 'VundleVim/Vundle.vim'   " let Vundle manage Vundle, required
 "Plugin 'ycm-core/YouCompleteMe'
+"Plugin 'scrooloose/nerdtree'
+"Plugin 'pearofducks/ansible-vim'
+Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-fugitive'
@@ -256,13 +261,10 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'tomtom/tcomment_vim'
-Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'reedes/vim-colors-pencil'
-"Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'davidhalter/jedi-vim'
-"Plugin 'pearofducks/ansible-vim'
 
 " All of your Plugins must be added before these lines:
 call vundle#end()            " required
