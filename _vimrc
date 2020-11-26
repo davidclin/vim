@@ -67,6 +67,7 @@
 "| Start NERDTree                         | Ctrl-n  |
 "| Close NERDTree                         | q       |
 "| NERDTree menu                          | m       |
+"| NERDTREE menu (exit)                   | Esc     |
 "|----------------------------------------+---------|
 "
 "
@@ -83,6 +84,8 @@
 " |-------------------------------------+-----------------------------------|
 " | How to use equivalent of            | cntl+q                            |
 " | cntl+v in Windows                   |                                   |
+" |-------------------------------------+-----------------------------------|
+" | Syntasic checking of JSON           | :setfiletype json                 | 
 " |-------------------------------------+-----------------------------------|
 " | Folds                               | zM  => fold all                   |
 " |                                     | zR  => unfold all                 |
@@ -250,8 +253,9 @@ call vundle#begin('$HOME/vimfiles/bundle/')
 
 Plugin 'VundleVim/Vundle.vim'   " let Vundle manage Vundle, required
 "Plugin 'ycm-core/YouCompleteMe'
-"Plugin 'scrooloose/nerdtree'
 "Plugin 'pearofducks/ansible-vim'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'scrooloose/nerdtree'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
@@ -276,6 +280,21 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
+
+
+" ####################################################
+" ##########  Settings for Syntastic Plugin ##########
+" ##########         :help syntastic        ##########
+" ####################################################
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 
 
 " ################################################################
@@ -412,3 +431,8 @@ command! PrettyPrintXML !tidy -mi -xml -wrap 0 %
 
 set colorcolumn=79
 
+" ##########################################
+" ##########  Useful Help Manuals ##########
+" ##########################################
+" :help 
+" :help syntastic-checkers
