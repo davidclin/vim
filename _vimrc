@@ -85,7 +85,11 @@
 " | How to use equivalent of            | cntl+q                            |
 " | cntl+v in Windows                   |                                   |
 " |-------------------------------------+-----------------------------------|
-" | Syntasic checking of JSON           | :setfiletype json                 | 
+" | Syntasic checking of JSON           | :setfiletype json                 |
+" |                                     | :SyntasticInfo                    |
+" |                                     |                                   |
+" |                                     | Remember to use 'set paste'       |
+" |                                     | when pasting from AWS console     |
 " |-------------------------------------+-----------------------------------|
 " | Folds                               | zM  => fold all                   |
 " |                                     | zR  => unfold all                 |
@@ -247,13 +251,15 @@ call vundle#begin('$HOME/vimfiles/bundle/')
 "set pythonthreehome=C:\Python37
 "set encoding=utf-8
 
-" #############################
-" ########## Plugins ##########
-" #############################
+" ######################################
+" ######         Plugins        ########
+" ###### https://vimawesome.com ########
+" ######################################
 
 Plugin 'VundleVim/Vundle.vim'   " let Vundle manage Vundle, required
 "Plugin 'ycm-core/YouCompleteMe'
 "Plugin 'pearofducks/ansible-vim'
+Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'dhruvasagar/vim-table-mode'
@@ -434,5 +440,12 @@ set colorcolumn=79
 " ##########################################
 " ##########  Useful Help Manuals ##########
 " ##########################################
-" :help 
-" :help syntastic-checkers
+" |-------------+--------------------------|
+" | Description | Command                  |
+" |-------------+--------------------------|
+" | vim         | :help                    |
+" |-------------+--------------------------|
+" | Syntastic   | :help syntastic-checkers |
+" |             | :help Syntastic          |
+" |-------------+--------------------------|
+
