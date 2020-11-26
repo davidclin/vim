@@ -255,6 +255,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'   " let Vundle manage Vundle, required
 "Plugin 'ycm-core/YouCompleteMe'
 "Plugin 'pearofducks/ansible-vim'
+Plugin 'jiangmiao/auto-pairs'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'scrooloose/nerdtree'
