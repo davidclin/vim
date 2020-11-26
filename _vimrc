@@ -20,7 +20,7 @@
 "   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 "
 "   (for Windows)
-"   git clone https://github.com/VundleVim/Vundle.vim.git ./vimfiles/bundle/Vundle.vim
+"   git clone https://github.com/VundleVim/Vundle.vim.git $HOME/vimfiles/bundle/Vundle.vim
 "
 "   Assumes Git is installed in c:\Users\<username> directory and this path is your $HOME.
 "   See https://github.com/VundleVim/Vundle.vim/wiki/Vundle-for-Windows for latest info
