@@ -441,4 +441,6 @@ set colorcolumn=79
 " | Syntastic   | :help syntastic-checkers |
 " |             | :help Syntastic          |
 " |-------------+--------------------------|
+" | jedi-vim    | :help jedi-vim           |
+" |-------------+--------------------------|
 
