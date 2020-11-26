@@ -77,6 +77,14 @@
 " |----------------------------+-----------------------------------|
 " | Description                | Command                           |
 " |----------------------------+-----------------------------------|
+" | How to use equivalent of   | cntl+q                            |
+" | cntl+v in Windows          |                                   |
+" |----------------------------+-----------------------------------|
+" | VIM surround commands      | cs"'    replaces " with '         |
+" |                            | ds"     removes " around word     |
+" |                            |                                   |
+" |                            | Also supports [, (, t             |
+" |----------------------------+-----------------------------------|
 " | Find number of matches     | :%s/pattern//gn                   |
 " |                            |                                   |
 " |                            | Omit g to display number of lines |
