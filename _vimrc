@@ -318,6 +318,8 @@ let g:syntastic_check_on_wq = 0
 
 " Set NERDTree mapping
 nnoremap <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeShowHidden=1
+let g:NERDTreeAutoDeleteBuffer=1
 
 " Go to next and previous buffer ; useful for switching tabs
 nnoremap ;; :bn<CR>

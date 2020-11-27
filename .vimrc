@@ -293,12 +293,28 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 "filetype plugin on
 
 
+" ####################################################
+" ##########  Settings for Syntastic Plugin ##########
+" ##########         :help syntastic        ##########
+" ####################################################
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 " ################################################################
 " ##########  Put your non-Plugin stuff after this line ##########
 " ################################################################
 
-" Set NERDTree mapping
+" Set NERDTree mapping and useful settings
 nnoremap <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeShowHidden=1
+let g:NERDTreeAutoDeleteBuffer=1
+
 
 " Go to next and previous buffer ; useful for switching tabs
 nnoremap ;; :bn<CR>
