@@ -246,10 +246,10 @@ filetype off
 set rtp+=$HOME/vimfiles/bundle/Vundle.vim/
 call vundle#begin('$HOME/vimfiles/bundle/')
 
-" for the YouCompleteMe Plugin, you will need to specify the location of your Python interpreter
-"set pythonthreedll=python37.dll
-"set pythonthreehome=C:\Python37
-"set encoding=utf-8
+" for Plugins that use Python, you will need to specify the location of your Python interpreter
+set pythonthreedll=C:\Python37\python37.dll
+set pythonthreehome=C:\Python37
+set encoding=utf-8
 
 " ######################################
 " ######         Plugins        ########
@@ -257,7 +257,7 @@ call vundle#begin('$HOME/vimfiles/bundle/')
 " ######################################
 
 Plugin 'VundleVim/Vundle.vim'   " let Vundle manage Vundle, required
-"Plugin 'ycm-core/YouCompleteMe'
+Plugin 'ycm-core/YouCompleteMe'
 "Plugin 'pearofducks/ansible-vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'bronson/vim-trailing-whitespace'
@@ -448,8 +448,5 @@ set colorcolumn=79
 " |-------------+--------------------------|
 " | Syntastic   | :help syntastic-checkers |
 " |             | :help Syntastic          |
-" |-------------+--------------------------|
-" |-------------+--------------------------|
-" | jedi-vim    | :help jedi-vim           |
 " |-------------+--------------------------|
 
