@@ -42,7 +42,9 @@
 "     :PluginList       - lists configured plugins
 "     :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
 "     :PluginSearch foo - searches for foo; append `!` to refresh local cache
+"     :PluginUpdate     - updates Plugins and removes if not in list anymore
 "     :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"                         this essentially deletes the Plugin directory
 "
 "   See :h vundle for more details or wiki for FAQ
 "
