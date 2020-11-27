@@ -3,13 +3,21 @@ Add a new sentence to front of this sentence.
 Add a new sentence to the end of this sentence.
 Copy this line and paste 3 times.
 Now take this paragraph and copy it multiple times.
+Pick any line and surroud it with quotes.
+Select a few lines and add unncessary spaces after them.
+Use F5 to remove the unnecessary spaces after them.
+Use :set scb! (or set scrollbind) to bind screens.
+Use NERDTree to copy this file with a different name in the same directory.
+Use NERDTree to create multiple subdirectories with files.
+User NERDTree to delete the subdirectory after you're done.
+Create several new tabs (set tabedit) and move around the tabs using gt (or #gt) where # is the tab number.
 Cut any of the lines and paste it to the top of this page.
 Cut any of the lines and paste it to the bottom of this page.
 Replace the word "sentence" with "line". ***snickety***
-Replace "paste it" with "lick it".
+Replace "paste it" with "replace it".
 Remove every occurence of the word "Cut".
 Insert 3 spaces in front of the last 3 lines.
-Jump to the word snickety.
+Jump to any word in the document using EasyMotion
 Join this sentence with the sentence above it.
 Split this window vertically.
 Move to the right window.
@@ -19,8 +27,7 @@ Open green eggs and ham in a new buffer in any window.
 Quickly switch between buffers in the window that contains more than 1 buffers.
 Maximize the window in you're in with function key mapping you created.
 Make split windows of equal size.
-Close one of the window.
-Use CntlP to open a green eggs and ham file.
+Close one of the windows.
 Delete everything inside the quotes here... "you are a little dweeb"
 Delete everything around the paranthesis here... (please, don't eat me)
 Cut every word in this sentence To ;Nice job!
@@ -33,9 +40,10 @@ Move cursor to end of sentence.
 Move cursor to beginning of sentence.
 List all Plugins.
 Update Plugins.
-Use help for a plugin you want to learn more about.
+Use 'help' for a plugin you want to learn more about.
 Launch the following link in this line - aws.amazon.com
 Launch the following line in this line - http://aws.amazon.com
+Switch to "Goyo" for easiser reading and copying/pasting
 Open NERDTree and navigate through the directory structure.
 Insert any text from figlet or cowsay into this document.
 Make a change to your .vimrc file and source the file.
