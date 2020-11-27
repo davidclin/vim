@@ -22,6 +22,11 @@ Summary
 Plugins
 - Plugin 'VundleVim/Vundle.vim'   " let Vundle manage Vundle, required
 - Plugin 'ycm-core/YouCompleteMe'
+- Plugin 'jiangmiao/auto-pairs'
+- Plugin 'bronson/vim-trailing-whitespace'
+- Plugin 'vim-syntastic/syntastic'
+- Plugin 'scrooloose/nerdtree'
+- Plugin 'dhruvasagar/vim-table-mode'
 - Plugin 'tpope/vim-surround'
 - Plugin 'tpope/vim-repeat'
 - Plugin 'tpope/vim-fugitive'
@@ -30,9 +35,7 @@ Plugins
 - Plugin 'kien/ctrlp.vim'
 - Plugin 'junegunn/goyo.vim'
 - Plugin 'tomtom/tcomment_vim'
-- Plugin 'dhruvasagar/vim-table-mode'
 - Plugin 'reedes/vim-colors-pencil'
-- Plugin 'scrooloose/nerdtree'
 - Plugin 'jistr/vim-nerdtree-tabs'
 - Plugin 'airblade/vim-gitgutter'
 - Plugin 'davidhalter/jedi-vim'
@@ -46,13 +49,6 @@ Plugins
 
 # Quick Windows 10 Install with gVIM 
 
-## Install apps
-- open Terminal (run as Administrator)
-- choco install -y vim 
-- pin gVIM (not VIM) to your taskbar
-- (OPTIONAL) choco install -y python3
-- (OPTIONAL) choco install -y git 
-- (OPTIONAL) pip install boto3
 
 ## Install Vundle
 - git clone https://github.com/VundleVim/Vundle.vim.git $HOME/vimfiles/bundle/Vundle.vim  
@@ -60,14 +56,15 @@ Plugins
 ## To find location of all vimrc file(s) and order of operation
 This may come in handy when trying to figure out where vim looks to execute .vimrc
 - vim --version | grep vimrc  (to get path of all vimrc files)
+Note: Output will be different when executed from Terminal versus from gVIM app
 
 For Linux  , .vimrc usually lives under ~/.vimrc
 For Windows, _vimrc usually lives under $HOME
 
 Depending on the output of the command above
 ## Pull repo and copy _vimrc to $HOME
-- git clone https://github.com/davidclin/vim-davidclin.git
-- cd vim-davidclin
+- git clone https://github.com/davidclin/vim.git
+- cd vim
 - cp _vimrc $HOME\_vimrc  (tip: use Notepad if you're unable to edit the file using other programs then copy file to $HOME\_vimrc)
 
 ## Install VIM plugins
