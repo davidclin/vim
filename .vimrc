@@ -92,7 +92,7 @@
 " | How to use equivalent of            | cntl+q                            |
 " | cntl+v in Windows                   |                                   |
 " |-------------------------------------+-----------------------------------|
-" | Syntasic checking of JSON           | :setfiletype json                 |
+" | Syntasic checking of JSON/Python    | :setfiletype [json/python]        |
 " |                                     | :SyntasticInfo                    |
 " |                                     |                                   |
 " |                                     | Remember to use 'set paste'       |
