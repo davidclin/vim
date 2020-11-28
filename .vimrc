@@ -385,6 +385,9 @@ nmap # #zz
 nmap g* g*zz
 nmap g# g#zz
 
+" Exit all windows without saving
+nnoremap , :qa!<CR>
+
 " Keep Cursor Centered Vertically
 nmap j jzz
 nmap k kzz
@@ -467,4 +470,5 @@ set colorcolumn=79
 " |-------------+--------------------------|
 " | jedi-vim    | :help jedi-vim           |
 " |-------------+--------------------------|
+
 
