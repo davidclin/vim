@@ -70,6 +70,7 @@
 "| Start NERDTree                         | Ctrl-n  |
 "| Close NERDTree                         | q       |
 "| NERDTree menu                          | m       |
+"| NERDTREE menu (exit)                   | Esc     |
 "|----------------------------------------+---------|
 "
 "
@@ -256,6 +257,11 @@ call vundle#begin()
 " set rtp+=$HOME/.vim/bundle/Vundle.vim/
 " call vundle#begin('$HOME/.vim/bundle/')
 
+
+
+
+
+
 " ######################################
 " ######     Awesome Plugins    ########
 " ###### https://vimawesome.com ########
@@ -372,6 +378,12 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 
+" Make adjusting split sizes more friendly
+noremap <silent> <C-Left> :vertical resize +3<CR>
+noremap <silent> <C-Right> :vertical resize -3<CR>
+noremap <silent> <C-Up> :vertical resize +3<CR>
+noremap <silent> <C-Down> :vertical resize -3<CR>
+
 " Normal Non-recursive Map (nnoremap) to expand vertical split window full screen
 nnoremap <F2> <C-w>=
 nnoremap <F3> <C-w><bar>
@@ -422,8 +434,8 @@ autocmd BufWinLeave * call clearmatches()
 "    zM  => fold all
 "    zR  => unfold all
 "    za  => toggle fold
-set foldmethod=marker
-set foldmarker=/*,*/
+"set foldmethod=marker
+"set foldmarker=/*,*/
 
 " Enable syntax and plugins (for newtrw)
 syntax enable

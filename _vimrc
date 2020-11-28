@@ -264,7 +264,7 @@ set encoding=utf-8
 " ######         Plugins        ########
 " ###### https://vimawesome.com ########
 " ######################################
-
+"
 Plugin 'VundleVim/Vundle.vim'   " let Vundle manage Vundle, required
 Plugin 'ycm-core/YouCompleteMe'
 "Plugin 'pearofducks/ansible-vim'
@@ -366,6 +366,12 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" Make adjusting split sizes more friendly
+noremap <silent> <C-Left> :vertical resize +3<CR>
+noremap <silent> <C-Right> :vertical resize -3<CR>
+noremap <silent> <C-Up> :vertical resize +3<CR>
+noremap <silent> <C-Down> :vertical resize -3<CR>
+
 
 " Normal Non-recursive Map (nnoremap) to expand vertical split window full screen
 nnoremap <F2> <C-w>=
@@ -418,8 +424,8 @@ autocmd BufWinLeave * call clearmatches()
 "    zM  => fold all
 "    zR  => unfold all
 "    za  => toggle fold
-set foldmethod=marker
-set foldmarker=/*,*/
+"set foldmethod=marker
+"set foldmarker=/*,*/
 
 " Enable syntax and plugins (for newtrw)
 syntax enable
@@ -463,5 +469,7 @@ set colorcolumn=79
 " |-------------+--------------------------|
 " | Syntastic   | :help syntastic-checkers |
 " |             | :help Syntastic          |
+" |-------------+--------------------------|
+" | jedi-vim    | :help jedi-vim           |
 " |-------------+--------------------------|
 
