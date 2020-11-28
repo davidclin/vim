@@ -56,6 +56,7 @@
 "|----------------------------------------+---------|
 "| Description                            | Command |
 "|----------------------------------------+---------|
+"| Close all tabs, windows, buffers, etc. | ,       |
 "| Next buffer                            | ;;      |
 "| Previous Buffer                        | aa      |
 "| Equally sized split windows            | <F2>    |
