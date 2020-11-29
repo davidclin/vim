@@ -87,6 +87,8 @@
 " |                                     | bind. Type again to toggle        |
 " |                                     | on/off.                           |
 " |-------------------------------------+-----------------------------------|
+" | Page up/down                        | cntl + d / u                      |
+" |-------------------------------------+-----------------------------------|
 " | Useful mapping(s)                   | F5  removes trailing whitespaces  |
 " |-------------------------------------+-----------------------------------|
 " | Zen mode                            | :Goyo / :Goyo!                    |
@@ -372,6 +374,8 @@ noremap <silent> <C-Right> :vertical resize -3<CR>
 noremap <silent> <C-Up> :vertical resize +3<CR>
 noremap <silent> <C-Down> :vertical resize -3<CR>
 
+" Removes pipes | that act as separators on splits
+set fillchars+=vert: 
 
 " Normal Non-recursive Map (nnoremap) to expand vertical split window full screen
 nnoremap <F2> <C-w>=
