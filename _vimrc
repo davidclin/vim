@@ -461,7 +461,8 @@ command! PrettyPrintHTML !tidy -mi -html -wrap 0 %
 command! PrettyPrintXML !tidy -mi -xml -wrap 0 %
 
 
-set colorcolumn=79
+"set colorcolumn=79
+set colorcolumn=0
 
 " ##########################################
 " ##########  Useful Help Manuals ##########
