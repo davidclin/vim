@@ -478,3 +478,28 @@ set colorcolumn=0
 " | jedi-vim    | :help jedi-vim           |
 " |-------------+--------------------------|
 
+" ##############################################
+" ##########  gVIM versus VIM Console ##########
+" ##############################################
+" Don't confuse gVIM with the vim console.
+" They are completely different apps.
+"
+" gVIM:
+" o uses $HOME\_vimrc
+" o :set filetype=python
+" :w !python -  (to invoke Python script)
+"
+" vim console:
+" o uses $HOME\.vimrc
+" o :set filetype=python
+" o !python <filename.py>
+"
+" When in doubt, run 'vim --version' to see
+" path(s) gVIM/vim console will use when invoked.
+"
+" Use gVIM if you plan on using Plugins that require Python.
+" Otherwise, use the vim console from Windows Terminal for simple scripts.
+"
+" When running vim from Windows Terminal, disable Plugins that rely on Python.
+" If you want to run vim natively on Windows 10, use WSL/WSL2.
+" WSL2 requires latest Windows 10 version 2004 OS build 19041.264.
