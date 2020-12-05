@@ -203,7 +203,11 @@
 " | Change gVIM font size               | :set guifont=*                    |
 " |-------------------------------------+-----------------------------------|
 " | Digraphs                            | :dig                              |
+" |                                     | https://theasciicode.com.ar/      |
 " |                                     | insert mode -> <cntl>+k + char    |
+" |                                     |                                   |
+" |                                     | Extended ASCII characters         |
+" |                                     | https://theasciicode.com.ar/      |
 " |-------------------------------------+-----------------------------------|
 "
 " ##########################################
