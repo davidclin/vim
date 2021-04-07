@@ -303,6 +303,11 @@ filetype plugin indent on    " required
 " Get 2-space YAML as the default when hitting carriage return after the colon
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
+" Get 2-space as the default when hitting Tab key
+set tabstop =2
+set softtabstop =2
+set shiftwidth =2
+
 
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
