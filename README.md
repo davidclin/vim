@@ -51,7 +51,7 @@ Plugins
 
 
 ## Install Vundle
-- git clone https://github.com/VundleVim/Vundle.vim.git $HOME/vimfiles/bundle/Vundle.vim  
+- git clone https://github.com/VundleVim/Vundle.vim.git $HOME/vimfiles/bundle/Vundle.vim (deprecated) 
 - git clone https://github.com/muhammedabdelkader/VundleVim.git ~/.vim/bundle/Vundle.vim
 
 ## To find location of all vimrc file(s) and order of operation
