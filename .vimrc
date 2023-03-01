@@ -17,7 +17,7 @@
 " Step 1. Download
 "
 "   (for Linux)
-"   git clone https://github.com/muhammedabdelkader/VundleVim.git
+"   git clone https://github.com/muhammedabdelkader/VundleVim.git ~/.vim/bundle/Vundle.vim
 "   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim (deprecated)
 "
 "   (for Windows)
