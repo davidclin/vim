@@ -293,7 +293,7 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'reedes/vim-colors-pencil'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'davidhalter/jedi-vim'
+" Plugin 'davidhalter/jedi-vim'  (requires Python3)
 
 " All of your Plugins must be added before these lines:
 call vundle#end()            " required
